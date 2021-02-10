@@ -1,6 +1,6 @@
 .main_section {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     overflow: hidden;
     &::before {
         content: '';
@@ -112,7 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     flex-direction: column;
     .sarch_title {
         color: #fff;
@@ -164,6 +164,71 @@
             justify-content: center;
             @media (max-width: 990px) {
                 height: 40px;
+            }
+        }
+    }
+}
+
+.go_catalog {
+    margin-bottom: 40px;
+    background: url(../img/home/cata_ab.png) no-repeat center center/cover;
+    .container {
+        padding: 30px 0;
+    }
+    .go_catalog_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        .desk_img {
+            position: absolute;
+            left: 0;
+            top: -27px;
+            @media (max-width: 990px) {
+                display: block;
+                max-width: 200px;
+                max-height: 170px;
+                top: 115px;
+                left: -45px;
+            }
+        }
+        .info_box {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: right;
+            margin-right: 0;
+            position: relative;
+            z-index: 9;
+            .go_title {
+                color: #fff;
+                margin-bottom: 10px;
+                text-align: right;
+                font: 400 1.75rem 'Inter', sans-serif;
+                @media (max-width: 990px) {
+                    font: 400 1.2rem 'Inter', sans-serif;
+                }
+            }
+            .go_text {
+                color: #fff;
+                margin-bottom: 15px;
+                font: 400 .95rem/24px 'Inter', sans-serif;
+                text-align: right;
+                @media (max-width: 990px) {
+                    font: 400 .87rem/21px 'Inter', sans-serif;
+                    max-width: 330px;
+                    margin: 0 auto;
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+            .go_link {
+                color: #fff;
+                font: 700 1.125rem 'Inter', sans-serif;
+                display: inline-block;
+                padding: 10px 20px;
+                background: #55B56B;
+                border-radius: 3px;
             }
         }
     }
@@ -998,11 +1063,11 @@
     .find_img {
         position: absolute;
         left: -60px;
-        top: -39px;
-        @media (max-width: 1280px) {
+        top: -68px;
+        @media (max-width: 1100px) {
             left: auto;
-            right: -80px;
-            top: 80px;
+            right: -40px;
+            top: -77px;
             z-index: 9;
         }
         @media (max-width: 990px) {
@@ -1011,11 +1076,68 @@
         img {
             max-width: 100%;
             height: auto;
-            @media (max-width: 1200px) {
+            @media (max-width: 1100px) {
                 width: 130px;
+                max-height: 200px;
             }
             @media (max-width: 990px) {
                 max-height: 110px;
+            }
+        }
+    }
+}
+
+.facts {
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, .5);
+    .container {
+        padding: 25px 0;
+    }
+    .fact_title {
+        margin-bottom: 15px;
+        color: #fff;
+        font: 700 1.5rem 'Inter', sans-serif;
+        @media (max-width: 990px) {
+            margin-bottom: 20px;
+            font: 700 1.2rem 'Inter', sans-serif;
+        }
+    }
+    .facts_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 25px;
+        }
+        .facts_box {
+            min-height: 60px;
+            @media (max-width: 990px) {
+                display: flex;
+                min-height: auto;
+                align-items: center;
+            }
+            .facts_title {
+                font: 700 1.2rem 'Inter', sans-serif;
+                margin-bottom: 5px;
+                color: rgba(255, 255, 255, 0.5);
+                @media (max-width: 990px) {
+                    margin: 0;
+                    margin-right: 10px;
+                }
+            }
+            .facts_text {
+                font: 700 1.2rem 'Inter', sans-serif;
+                color: #fff;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                margin: 0;
+                object-fit: contain;
             }
         }
     }
