@@ -1087,6 +1087,109 @@
     }
 }
 
+.jackpots {
+    background: url(../img/home/cata_ab.png) no-repeat center center/cover;
+    .container {
+        padding: 30px 0;
+        @media (max-width: 990px) {
+            padding: 20px 0;
+        }
+    }
+    .jackpots_title {
+        margin-bottom: 15px;
+        color: #fff;
+        text-align: center;
+        font: 700 1.5rem 'Inter', sans-serif;
+        @media (max-width: 990px) {
+            margin-bottom: 10px;
+            font: 700 1.2rem 'Inter', sans-serif;
+        }
+    }
+    .jackpots_text {
+        text-align: center;
+        margin: 0 auto;
+        font: 400 .95rem/22px 'Inter', sans-serif;
+        margin-bottom: 20px;
+        max-width: 660px;
+        color: #fff;
+        @media (max-width: 990px) {
+            text-align: center;
+            margin-bottom: 10px;
+            font: 400 .87rem/21px 'Inter', sans-serif;
+            max-width: 100%;
+        }
+    }
+    .jackpots_wrap {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 30px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            @media (max-width: 990px) {
+                display: block;
+                margin: 0 auto;
+                width: 80%;
+                max-width: 80%;
+                max-height: 300px;
+            }
+        }
+        .jackpots_info {
+            .info_title {
+                color: #fff;
+                margin-bottom: 10px;
+                font: 700 1.3rem 'Inter', sans-serif;
+                @media (max-width: 990px) {
+                    text-align: center;
+                    font: 700 1.1rem 'Inter', sans-serif;
+                }
+            }
+            .info_text {
+                font: 400 .95rem/22px 'Inter', sans-serif;
+                color: #fff;
+                @media (max-width: 990px) {
+                    font: 400 .87rem/21px 'Inter', sans-serif;
+                }
+            }
+        }
+        .jackpots_link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .name_jackpots {
+                margin-bottom: 5px;
+                color: #fff;
+                font: 700 1.4rem 'Inter', sans-serif;
+                @media (max-width: 990px) {
+                    margin-bottom: 10px;
+                    font: 700 1.1rem 'Inter', sans-serif;
+                }
+            }
+            .price {
+                margin-bottom: 10px;
+                color: #55B56B;
+                font: 700 2rem 'Inter', sans-serif;
+                @media (max-width: 990px) {
+                    font: 700 1.4rem 'Inter', sans-serif;
+                }
+            }
+            .link {
+                background: #55B56B;
+                border-radius: 3px;
+                padding: 12px 45px;
+                color: #FFF;
+                font: 700 1.05rem 'Inter', sans-serif;
+            }
+        }
+    }
+}
+
 .facts {
     margin-bottom: 25px;
     background: rgba(0, 0, 0, .5);
