@@ -2348,11 +2348,11 @@ header {
             align-items: center; }
     .breadcrumbs .breadcrumbs_wrap a,
     .breadcrumbs .breadcrumbs_wrap span {
-      color: #000;
+      color: #fff;
       font: 400 1rem 'Inter', sans-serif; }
     .breadcrumbs .breadcrumbs_wrap a {
       position: relative;
-      color: #7c7d7e;
+      color: #8b8c8f;
       display: block;
       padding-right: 12px;
       margin-right: 6px; }
@@ -2364,13 +2364,15 @@ header {
 .blog_title {
   margin: 0;
   font: 700 2rem 'Inter', sans-serif;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #fff; }
   @media (max-width: 990px) {
     .blog_title {
       font: 700 1.56rem 'Inter', sans-serif; } }
 
 .blog_text {
   margin-bottom: 15px;
+  color: #fff;
   font: 400 .95rem/22px 'Inter', sans-serif; }
   @media (max-width: 990px) {
     .blog_text {
@@ -2379,7 +2381,7 @@ header {
 .blog_filter {
   padding: 15px;
   margin-bottom: 15px;
-  background: #FFF;
+  background: #3B404A;
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 5px; }
@@ -2428,6 +2430,7 @@ header {
       -webkit-transition: .2s;
       -o-transition: .2s;
       transition: .2s;
+      color: #fff;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
@@ -2481,6 +2484,7 @@ header {
                 align-items: flex-start;
         margin: 0; } }
     .blog_filter .blog_filter_box .blog_filter_text {
+      color: #fff;
       margin-right: 20px;
       font: 400 1rem/23px 'Inter', sans-serif; }
       @media (max-width: 1280px) {
@@ -2509,6 +2513,7 @@ header {
         top: 17px;
         pointer-events: none; }
       .blog_filter .blog_filter_box .blog_filter_select select {
+        color: #fff;
         width: 200px;
         -webkit-appearance: none;
            -moz-appearance: none;
@@ -2517,7 +2522,7 @@ header {
         border: none;
         font: 400 1rem 'Inter', sans-serif;
         padding: 12px 15px;
-        background: #F5F5F5;
+        background: #596171;
         border-radius: 3px; }
         @media (max-width: 1280px) {
           .blog_filter .blog_filter_box .blog_filter_select select {
@@ -2541,9 +2546,10 @@ header {
                 appearance: none;
         outline: none;
         border: none;
+        color: #fff;
         font: 400 1rem 'Inter', sans-serif;
         padding: 12px 15px;
-        background: #F5F5F5;
+        background: #596171;
         border-radius: 3px; }
         @media (max-width: 1280px) {
           .blog_filter .blog_filter_box .blog_filter_search input {
@@ -2562,10 +2568,10 @@ header {
 .post_outher {
   margin-bottom: 15px;
   text-align: center;
-  color: #7c7d7e;
+  color: #8b8c8f;
   font: 400 .95rem 'Inter', sans-serif; }
   .post_outher span {
-    color: #000;
+    color: #fff;
     font: 700 1.2rem 'Inter', sans-serif; }
     @media (max-width: 990px) {
       .post_outher span {
@@ -2592,7 +2598,7 @@ header {
     .blog_output_wrap {
       grid-gap: 10px; } }
   .blog_output_wrap .blog_box {
-    background: #FFF;
+    background: #3B404A;
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -2632,7 +2638,7 @@ header {
       .blog_output_wrap .blog_box .blog_box_info .blog_info_title {
         font: 700 1.2rem 'Inter', sans-serif;
         margin-bottom: 8px;
-        color: #000; }
+        color: #fff; }
         @media (max-width: 576px) {
           .blog_output_wrap .blog_box .blog_box_info .blog_info_title {
             font: 700 1rem 'Inter', sans-serif;
@@ -2642,7 +2648,7 @@ header {
         font: 400 .9rem/20px 'Inter', sans-serif;
         height: 60px;
         overflow: hidden;
-        color: #000;
+        color: #fff;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
@@ -2652,8 +2658,13 @@ header {
             margin-bottom: 10px;
             height: 50px; } }
       .blog_output_wrap .blog_box .blog_box_info .blog_info_data {
-        color: #000000;
+        color: #8b8c8f;
         opacity: .5;
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: -1;
+            -ms-flex-order: -1;
+                order: -1;
+        margin-bottom: 10px;
         font: 400 0.9rem "Inter", sans-serif; }
         @media (max-width: 576px) {
           .blog_output_wrap .blog_box .blog_box_info .blog_info_data {
@@ -2675,9 +2686,9 @@ header {
   margin-bottom: 20px; }
   .blog_btn_more a {
     font: 700 1rem 'Inter', sans-serif;
-    color: #4482CD;
+    color: #fff;
     border-radius: 3px;
-    background: #ECF1FF;
+    background: #55B56B;
     padding: 15px 25px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2694,7 +2705,8 @@ header {
     .blog_btn_more a img {
       margin-left: 5px;
       position: relative;
-      top: 1px; }
+      top: 1px;
+      right: -5px; }
 
 .pagination {
   display: -webkit-box;
@@ -2739,7 +2751,7 @@ header {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        color: #000;
+        color: #fff;
         font: 700 1.2rem 'Inter', sans-serif;
         border: 2px solid transparent;
         -webkit-box-sizing: border-box;
@@ -2754,14 +2766,14 @@ header {
             width: 30px;
             font: 700 1rem 'Inter', sans-serif; } }
         .pagination ul li a:hover {
-          background: #ECF1FF; }
+          background: #3B404A; }
       .pagination ul li .left {
         -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
                 transform: rotate(180deg); }
       .pagination ul li .active_pagi {
-        border: 2px solid #4482CD;
-        color: #4482CD; }
+        border: 2px solid #FFCF24;
+        color: #FFCF24; }
         .pagination ul li .active_pagi:hover {
           background: transparent; }
 
@@ -2771,12 +2783,15 @@ header {
     .generate_casino_blog {
       margin-bottom: 25px; } }
   .generate_casino_blog .generate_casino_title {
-    font: 700 1.5rem 'Inter', sans-serif;
+    font: 400 1rem 'Inter', sans-serif;
     text-align: center;
     margin-bottom: 5px; }
-    @media (max-width: 990px) {
-      .generate_casino_blog .generate_casino_title {
-        font: 700 1.25rem 'Inter', sans-serif; } }
+    .generate_casino_blog .generate_casino_title span {
+      color: #FFCF24;
+      margin-left: 10px; }
+      .generate_casino_blog .generate_casino_title span img {
+        position: relative;
+        top: 1.2px; }
   .generate_casino_blog .generate_casino_text {
     text-align: center;
     max-width: 720px;
@@ -2833,7 +2848,7 @@ header {
       .generate_casino_blog .generate_casino_wrap {
         grid-template-columns: 1fr 1fr; } }
   .generate_casino_blog .generate_casino_box {
-    background: #FFF;
+    background: #292A2E;
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -2859,15 +2874,16 @@ header {
       font: 400 .95rem 'Inter', sans-serif;
       margin-bottom: 5px; }
     .generate_casino_blog .generate_casino_box .generate_casino_price {
-      color: #6CDA75;
+      color: #55B56B;
       text-align: center;
       margin-bottom: 7px;
       font: 700 1.2rem 'Inter', sans-serif; }
     .generate_casino_blog .generate_casino_box .generate_casino_info {
-      color: #000;
+      color: #fff;
       opacity: .5;
       cursor: pointer;
       text-align: center;
+      padding-bottom: 5px;
       font: 400 .75rem 'Inter', sans-serif;
       text-align: center;
       margin: 0 auto;
@@ -2887,7 +2903,7 @@ header {
         color: #0185FF; }
     .generate_casino_blog .generate_casino_box .generate_casino_btn {
       text-transform: uppercase;
-      background: #6CDA75;
+      background: #55B56B;
       border-radius: 3px;
       padding: 10px;
       width: 100%;
@@ -2909,21 +2925,22 @@ header {
   .blog_bottom .blog_bottom_wrap {
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    padding: 25px 35px;
-    background: url(../img/blog/blog_bg.png) no-repeat center center/cover; }
+    background: #3B404A;
+    padding: 25px 35px; }
     @media (max-width: 990px) {
       .blog_bottom .blog_bottom_wrap {
         padding: 20px 15px; } }
     .blog_bottom .blog_bottom_wrap .blog_bottom_box {
       padding-bottom: 15px;
       margin-bottom: 15px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
       .blog_bottom .blog_bottom_wrap .blog_bottom_box .blog_bottom_title {
         margin-bottom: 10px;
+        color: #fff;
         font: 700 1.2rem 'Inter', sans-serif; }
       .blog_bottom .blog_bottom_wrap .blog_bottom_box .blog_bottom_text {
         margin: 0;
+        color: #fff;
         font: 400 .95rem/22px 'Inter', sans-serif; }
     .blog_bottom .blog_bottom_wrap .blog_bottom_box:last-child {
       margin: 0;
@@ -5106,28 +5123,28 @@ header {
             content: "";
             background: #6CDA75; }
 
-.blog_bottom {
+.catalog_bottom {
   margin-bottom: 30px; }
-  .blog_bottom .blog_bottom_wrap {
+  .catalog_bottom .blog_bottom_wrap {
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     padding: 25px 35px;
     background: url(../img/blog/blog_bg.png) no-repeat center center/cover; }
     @media (max-width: 990px) {
-      .blog_bottom .blog_bottom_wrap {
+      .catalog_bottom .blog_bottom_wrap {
         padding: 20px 15px; } }
-    .blog_bottom .blog_bottom_wrap .blog_bottom_box {
+    .catalog_bottom .blog_bottom_wrap .blog_bottom_box {
       padding-bottom: 15px;
       margin-bottom: 15px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-      .blog_bottom .blog_bottom_wrap .blog_bottom_box .blog_bottom_title {
+      .catalog_bottom .blog_bottom_wrap .blog_bottom_box .blog_bottom_title {
         margin-bottom: 10px;
         font: 700 1.2rem 'Inter', sans-serif; }
-      .blog_bottom .blog_bottom_wrap .blog_bottom_box .blog_bottom_text {
+      .catalog_bottom .blog_bottom_wrap .blog_bottom_box .blog_bottom_text {
         margin: 0;
         font: 400 .95rem/22px 'Inter', sans-serif; }
-    .blog_bottom .blog_bottom_wrap .blog_bottom_box:last-child {
+    .catalog_bottom .blog_bottom_wrap .blog_bottom_box:last-child {
       margin: 0;
       padding: 0;
       border: none; }

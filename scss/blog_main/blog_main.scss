@@ -2,6 +2,7 @@
     margin: 0;
     font: 700 2rem 'Inter', sans-serif;
     margin-bottom: 10px;
+    color: #fff;
     @media (max-width: 990px) {
         font: 700 1.56rem 'Inter', sans-serif;
     }
@@ -9,6 +10,7 @@
 
 .blog_text {
     margin-bottom: 15px;
+    color: #fff;
     font: 400 .95rem/22px 'Inter', sans-serif;
     @media (max-width: 990px) {
         font: 400 .87rem/21px 'Inter', sans-serif;
@@ -18,7 +20,7 @@
 .blog_filter {
     padding: 15px;
     margin-bottom: 15px;
-    background: #FFF;
+    background: #3B404A;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
     border-radius: 5px;
     .blog_filter_wrap {
@@ -41,6 +43,7 @@
             display: flex;
             align-items: center;
             transition: .2s;
+            color: #fff;
             justify-content: center;
             font: 400 1rem 'Inter', sans-serif;
             img {
@@ -77,6 +80,7 @@
             margin: 0;
         }
         .blog_filter_text {
+            color: #fff;
             margin-right: 20px;
             font: 400 1rem/23px 'Inter', sans-serif;
             @media (max-width: 1280px) {
@@ -107,13 +111,14 @@
                 pointer-events: none;
             }
             select {
+                color: #fff;
                 width: 200px;
                 appearance: none;
                 outline: none;
                 border: none;
                 font: 400 1rem 'Inter', sans-serif;
                 padding: 12px 15px;
-                background: #F5F5F5;
+                background: #596171;
                 border-radius: 3px;
                 @media (max-width: 1280px) {
                     width: 150px;
@@ -135,9 +140,10 @@
                 appearance: none;
                 outline: none;
                 border: none;
+                color: #fff;
                 font: 400 1rem 'Inter', sans-serif;
                 padding: 12px 15px;
-                background: #F5F5F5;
+                background: #596171;
                 border-radius: 3px;
                 @media (max-width: 1280px) {
                     width: 150px;
@@ -160,10 +166,10 @@
 .post_outher {
     margin-bottom: 15px;
     text-align: center;
-    color: #7c7d7e;
+    color: #8b8c8f;
     font: 400 .95rem 'Inter', sans-serif;
     span {
-        color: #000;
+        color: #fff;
         font: 700 1.2rem 'Inter', sans-serif;
         @media (max-width: 990px) {
             font: 700 1.125rem 'Inter', sans-serif;
@@ -193,7 +199,7 @@
         grid-gap: 10px;
     }
     .blog_box {
-        background: #FFF;
+        background: #3B404A;
         box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
         border-radius: 5px;
         overflow: hidden;
@@ -223,7 +229,7 @@
             .blog_info_title {
                 font: 700 1.2rem 'Inter', sans-serif;
                 margin-bottom: 8px;
-                color: #000;
+                color: #fff;
                 @media (max-width: 576px) {
                     font: 700 1rem 'Inter', sans-serif;
                     margin-bottom: 5px;
@@ -234,7 +240,7 @@
                 font: 400 .9rem/20px 'Inter', sans-serif;
                 height: 60px;
                 overflow: hidden;
-                color: #000;
+                color: #fff;
                 display: -webkit-box;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
@@ -245,8 +251,10 @@
                 }
             }
             .blog_info_data {
-                color: #000000;
+                color: #8b8c8f;
                 opacity: .5;
+                order: -1;
+                margin-bottom: 10px;
                 font: 400 .9rem'Inter', sans-serif;
                 @media (max-width: 576px) {
                     font: 400 .75rem 'Inter', sans-serif;
@@ -263,9 +271,9 @@
     margin-bottom: 20px;
     a {
         font: 700 1rem 'Inter', sans-serif;
-        color: #4482CD;
+        color: #fff;
         border-radius: 3px;
-        background: #ECF1FF;
+        background: #55B56B;
         padding: 15px 25px;
         display: flex;
         align-items: center;
@@ -274,6 +282,7 @@
             margin-left: 5px;
             position: relative;
             top: 1px;
+            right: -5px;
         }
     }
 }
@@ -294,7 +303,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: #000;
+                color: #fff;
                 font: 700 1.2rem 'Inter', sans-serif;
                 border: 2px solid transparent;
                 box-sizing: border-box;
@@ -306,15 +315,15 @@
                     font: 700 1rem 'Inter', sans-serif;
                 }
                 &:hover {
-                    background: #ECF1FF;
+                    background: #3B404A;
                 }
             }
             .left {
                 transform: rotate(180deg);
             }
             .active_pagi {
-                border: 2px solid #4482CD;
-                color: #4482CD;
+                border: 2px solid #FFCF24;
+                color: #FFCF24;
                 &:hover {
                     background: transparent;
                 }
@@ -329,11 +338,16 @@
         margin-bottom: 25px;
     }
     .generate_casino_title {
-        font: 700 1.5rem 'Inter', sans-serif;
+        font: 400 1rem 'Inter', sans-serif;
         text-align: center;
         margin-bottom: 5px;
-        @media (max-width: 990px) {
-            font: 700 1.25rem 'Inter', sans-serif;
+        span {
+            color: #FFCF24;
+            margin-left: 10px;
+            img {
+                position: relative;
+                top: 1.2px;
+            }
         }
     }
     .generate_casino_text {
@@ -388,7 +402,7 @@
         }
     }
     .generate_casino_box {
-        background: #FFF;
+        background: #292A2E;
         box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
         border-radius: 5px;
         padding: 0;
@@ -416,16 +430,17 @@
             margin-bottom: 5px;
         }
         .generate_casino_price {
-            color: #6CDA75;
+            color: #55B56B;
             text-align: center;
             margin-bottom: 7px;
             font: 700 1.2rem 'Inter', sans-serif;
         }
         .generate_casino_info {
-            color: #000;
+            color: #fff;
             opacity: .5;
             cursor: pointer;
             text-align: center;
+            padding-bottom: 5px;
             font: 400 .75rem 'Inter', sans-serif;
             text-align: center;
             margin: 0 auto;
@@ -438,7 +453,7 @@
         }
         .generate_casino_btn {
             text-transform: uppercase;
-            background: #6CDA75;
+            background: #55B56B;
             border-radius: 3px;
             padding: 10px;
             width: 100%;
@@ -460,22 +475,23 @@
     margin-bottom: 30px;
     .blog_bottom_wrap {
         box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
-        background-color: #fff;
+        background: #3B404A;
         padding: 25px 35px;
-        background: url(../img/blog/blog_bg.png) no-repeat center center/cover;
         @media (max-width: 990px) {
             padding: 20px 15px;
         }
         .blog_bottom_box {
             padding-bottom: 15px;
             margin-bottom: 15px;
-            border-bottom: 1px solid rgba(0, 0, 0, .2);
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
             .blog_bottom_title {
                 margin-bottom: 10px;
+                color: #fff;
                 font: 700 1.2rem 'Inter', sans-serif;
             }
             .blog_bottom_text {
                 margin: 0;
+                color: #fff;
                 font: 400 .95rem/22px 'Inter', sans-serif;
             }
         }
