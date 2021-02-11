@@ -11,7 +11,7 @@
 
 .about_page_info {
     padding: 25px;
-    background: #FFF;
+    background: #3B404A;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
     border-radius: 5px;
     margin-bottom: 20px;
@@ -23,6 +23,7 @@
     .about_page_title {
         text-align: center;
         margin-bottom: 15px;
+        color: #fff;
         font: 700 2rem 'Inter', sans-serif;
         @media (max-width: 990px) {
             font: 700 1.5rem 'Inter', sans-serif;
@@ -30,13 +31,14 @@
     }
     .about_page_text {
         font: 400 .95rem/22px 'Inter', sans-serif;
+        color: #fff;
     }
 }
 
 .about_page_title_sm {
     margin-bottom: 15px;
     text-align: center;
-    color: #000;
+    color: #fff;
     font: 700 1.5rem 'Inter', sans-serif;
     @media (max-width: 990px) {
         font: 700 1.25rem 'Inter', sans-serif;
@@ -63,7 +65,7 @@
         display: grid;
         grid-gap: 20px;
         padding: 15px;
-        background: #fff;
+        background: #3B404A;
         box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
         border-radius: 5px;
         grid-template-columns: 30px 1fr;
@@ -71,10 +73,11 @@
     .about_features_title {
         margin-bottom: 5px;
         font: 700 1.2rem 'Inter', sans-serif;
-        color: #6CDA75;
+        color: #38ae56;
     }
     .about_features_text {
         font: 400 .95rem/20px 'Inter', sans-serif;
+        color: #fff;
     }
 }
 
@@ -144,7 +147,7 @@
 }
 
 .about_team_box {
-    background: #fff;
+    background: #3B404A;
     overflow: hidden;
     border-radius: 5px;
     display: flex;
@@ -160,14 +163,24 @@
             padding: 10px;
         }
         .name_team {
+            color: #fff;
             text-align: center;
             font: 700 1.2rem 'Inter', sans-serif;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             span {
                 font-weight: 400;
             }
         }
+        .email {
+            text-align: center;
+            color: #38AE56;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            display: block;
+            font: 400 .95em 'Inter', sans-serif;
+        }
         .info_team {
+            color: #fff;
             font: 400 .95rem/22px 'Inter', sans-serif;
         }
     }
