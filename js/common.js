@@ -225,3 +225,11 @@ $(".filter_item_title").on("click", function() {
 $(".filter_title").on("click", function() {
     $(".filter_box_wrap").slideToggle(200);
 });
+
+$(".show_all").on("click", function() {
+    $(this).siblings(".hide_payments").slideToggle(200);
+});
+
+$(".call_item_list").on("click", function() {
+    $(this).next(".item_list").slideToggle(200);
+});
