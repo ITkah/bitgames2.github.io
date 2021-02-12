@@ -169,6 +169,44 @@ const swiper2 = new Swiper('.about_team_wrap', {
     },
 });
 
+
+const swiper3 = new Swiper('.game_slider', {
+    loop: false,
+    centerInsufficientSlides: false,
+    centeredSlides: false,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        360: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 15
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 15
+        }
+    },
+    //If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
 $(".sort_filter select").on("click", function() {
     $('.sort_filter select').not(this).parent().removeClass("img_active");
     $(this).parent().toggleClass("img_active");
