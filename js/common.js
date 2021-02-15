@@ -72,7 +72,7 @@ const swiper = new Swiper('.swiper_casino', {
     centerInsufficientSlides: false,
     centeredSlides: false,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 10,
     grabCursor: true,
     autoplay: {
         delay: 4500,
@@ -81,20 +81,20 @@ const swiper = new Swiper('.swiper_casino', {
         // when window width is >= 320px
         320: {
             slidesPerView: 2,
-            spaceBetween: 15
+            spaceBetween: 5
         },
         // when window width is >= 480px
         576: {
             slidesPerView: 3,
-            spaceBetween: 15
+            spaceBetween: 10
         },
         768: {
             slidesPerView: 4,
-            spaceBetween: 15
+            spaceBetween: 10
         },
         1100: {
             slidesPerView: 7,
-            spaceBetween: 15
+            spaceBetween: 10
         }
     },
     //If we need pagination
@@ -132,7 +132,6 @@ $(".blog_filter_call").on("click", function() {
     $(this).toggleClass("blog_filter_call_active")
     $(".blog_filter_wrap").slideToggle(200);
 });
-
 
 
 const swiper2 = new Swiper('.about_team_wrap', {
