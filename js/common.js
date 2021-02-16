@@ -232,3 +232,20 @@ $(".show_all").on("click", function() {
 $(".call_item_list").on("click", function() {
     $(this).next(".item_list").slideToggle(200);
 });
+
+
+$('.copy_img').click(function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(this).siblings(".copyinfo_text").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    $(this).parent().addClass("suces");
+});
+
+$(".page_casino_navigation").on("click", "a", function(event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top - 50;
+    $('body,html').animate({ scrollTop: top }, 1500);
+});
