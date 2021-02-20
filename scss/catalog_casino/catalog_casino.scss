@@ -668,6 +668,7 @@
                         display: block;
                     }
                     p {
+                        white-space: nowrap;
                         font: 400 1rem 'Inter', sans-serif;
                         color: #FFC850;
                         @media (max-width: 990px) {

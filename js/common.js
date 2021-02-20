@@ -206,6 +206,19 @@ const swiper3 = new Swiper('.game_slider', {
     },
 });
 
+const swiper4 = new Swiper('.soft_holl_slider', {
+    loop: false,
+    centerInsufficientSlides: false,
+    centeredSlides: false,
+    slidesPerView: 1,
+    spaceBetween: 15,
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
 $(".sort_filter select").on("click", function() {
     $('.sort_filter select').not(this).parent().removeClass("img_active");
     $(this).parent().toggleClass("img_active");
