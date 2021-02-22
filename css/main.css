@@ -7643,6 +7643,8 @@ s textarea::-webkit-input-placeholder {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 5px; }
+  .page_casino .page_casino_hits .red_active_border {
+    border: 2px solid #E09B57; }
   .page_casino .page_casino_hits .tabs__caption {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -7677,6 +7679,8 @@ s textarea::-webkit-input-placeholder {
     .page_casino .page_casino_hits .tabs__caption .active {
       opacity: 1;
       background: #55B56B; }
+    .page_casino .page_casino_hits .tabs__caption .red_active {
+      background: #E09B57; }
   .page_casino .page_casino_hits .tabs_detail_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
