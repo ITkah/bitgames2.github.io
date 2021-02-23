@@ -1307,6 +1307,7 @@
             }
             @media (max-width: 990px) {
                 grid-template-columns: 1fr 1fr;
+                margin-bottom: 15px;
             }
         }
         .generate_casino_box {
@@ -1396,5 +1397,21 @@
                 }
             }
         }
+    }
+}
+
+.copyinfo {
+    position: relative;
+}
+
+.copy_img {
+    cursor: pointer;
+    &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }

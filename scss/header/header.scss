@@ -62,6 +62,8 @@ header {
         .search_form {
             display: flex;
             width: 100%;
+            align-items: center;
+            justify-content: center;
             .input_search {
                 appearance: none;
                 border: none;
@@ -75,13 +77,14 @@ header {
             }
             .btn_search {
                 height: 100%;
-                padding: 12px;
+                padding: 11.75px;
                 background: #6CDA75;
                 border-radius: 0 3px 3px 0;
                 appearance: none;
                 outline: none;
                 border: none;
                 position: relative;
+                top: 0;
                 display: flex;
                 cursor: pointer;
                 align-items: center;
