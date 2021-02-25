@@ -85,15 +85,16 @@ select {
   cursor: pointer; }
 
 .readactor_output p {
+  color: #fff !important;
   font: 400 0.95rem/24px "Inter", sans-serif !important; }
   @media (max-width: 990px) {
     .readactor_output p {
       font: 400 0.87rem/21px "Inter", sans-serif !important; } }
 
 .readactor_output a {
-  color: #55B56B;
-  display: inline-block;
-  text-decoration: underline;
+  color: #55B56B !important;
+  display: inline-block !important;
+  text-decoration: underline !important;
   font: 400 .95rem/24px 'Inter', sans-serif; }
   @media (max-width: 990px) {
     .readactor_output a {
@@ -112,6 +113,7 @@ select {
 .readactor_output h3,
 .readactor_output h4,
 .readactor_output h5 {
+  color: #fff !important;
   font: 700 1.4rem "Inter", sans-serif !important; }
   @media (max-width: 990px) {
     .readactor_output h1,
