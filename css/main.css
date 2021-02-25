@@ -7754,6 +7754,9 @@ s textarea::-webkit-input-placeholder {
         left: -8px;
         top: -2px;
         color: #55B56B; }
+  .page_casino .page_casino_hits .tabs__content:last-child li::after {
+    content: '-';
+    color: #E09B57; }
 
 .page_casino .page_casino_details {
   background: #3B404A;
