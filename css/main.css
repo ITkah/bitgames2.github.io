@@ -8435,6 +8435,21 @@ s textarea::-webkit-input-placeholder {
       @media (max-width: 990px) {
         .page_casino .page_casino_support .custom_support_wrap .services_wrap .services_box {
           margin: 0; } }
+      .page_casino .page_casino_support .custom_support_wrap .services_wrap .services_box .star_wraper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .page_casino .page_casino_support .custom_support_wrap .services_wrap .services_box .star_wraper img {
+          margin: 0 3px; }
       .page_casino .page_casino_support .custom_support_wrap .services_wrap .services_box img {
         margin-bottom: 15px; }
         @media (max-width: 990px) {
