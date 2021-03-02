@@ -10858,6 +10858,9 @@ footer {
   background: url(../img/footer/footer_bg.svg) no-repeat center center;
   background-size: cover;
   position: relative; }
+  @media (max-width: 576px) {
+    footer {
+      background: url(../img/footer/footer_bg.png) no-repeat center center/cover; } }
   footer .container {
     padding: 0 0 25px 0; }
     @media (max-width: 990px) {
