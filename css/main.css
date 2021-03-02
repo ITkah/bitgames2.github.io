@@ -2372,7 +2372,11 @@ header {
     margin: 15px 0; }
     @media (max-width: 990px) {
       .description .description_item_box {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        border-bottom: 2px dashed rgba(255, 255, 255, 0.2); } }
+  @media (max-width: 990px) {
+    .description .description_item_box:last-child {
+      border: none; } }
   .description .item_info .description_list {
     display: grid;
     grid-template-columns: 1fr;
