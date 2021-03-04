@@ -65,16 +65,19 @@
         }
     }
     .hide_text {
-        height: 85px;
-        overflow: hidden;
+        @media (max-width: 990px) {
+            height: 85px;
+            overflow: hidden;
+        }
     }
     .hide_text_active {
         height: auto;
     }
     .show_more {
-        display: none;
+        cursor: pointer;
         font: 400 .9rem 'Inter', sans-serif;
         color: #55B56B;
+        display: none;
         @media (max-width: 990px) {
             display: flex;
             align-items: center;

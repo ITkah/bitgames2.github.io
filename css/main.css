@@ -5805,15 +5805,17 @@ s textarea::-webkit-input-placeholder {
       .catalog_casino .catalog_casino_text {
         margin-bottom: 10px;
         max-width: 70%; } }
-  .catalog_casino .hide_text {
-    height: 85px;
-    overflow: hidden; }
+  @media (max-width: 990px) {
+    .catalog_casino .hide_text {
+      height: 85px;
+      overflow: hidden; } }
   .catalog_casino .hide_text_active {
     height: auto; }
   .catalog_casino .show_more {
-    display: none;
+    cursor: pointer;
     font: 400 .9rem 'Inter', sans-serif;
-    color: #55B56B; }
+    color: #55B56B;
+    display: none; }
     @media (max-width: 990px) {
       .catalog_casino .show_more {
         display: -webkit-box;
