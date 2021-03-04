@@ -86,7 +86,7 @@ select {
 
 .readactor_output p {
   color: #fff !important;
-  font: 400 0.95rem/24px "Inter", sans-serif !important; }
+  font: 400 0.95rem/23px "Inter", sans-serif !important; }
   @media (max-width: 990px) {
     .readactor_output p {
       font: 400 0.87rem/21px "Inter", sans-serif !important; } }
