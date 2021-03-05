@@ -5043,7 +5043,8 @@ header {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         display: block;
         font-size: .87rem;
-        text-align: right; }
+        text-align: right;
+        min-height: 30px; }
       .info_page_wrap .blog_post_content table td:before {
         content: attr(aria-label);
         float: left;
@@ -8364,7 +8365,8 @@ s textarea::-webkit-input-placeholder {
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       display: block;
       font-size: .87rem;
-      text-align: right; }
+      text-align: right;
+      min-height: 30px; }
     .page_casino .payments_box .payment_table_wrap table td:before {
       content: attr(aria-label);
       float: left;
