@@ -65,10 +65,8 @@
         }
     }
     .hide_text {
-        @media (max-width: 990px) {
-            height: 85px;
-            overflow: hidden;
-        }
+        height: 85px;
+        overflow: hidden;
     }
     .hide_text_active {
         height: auto;
@@ -77,11 +75,8 @@
         cursor: pointer;
         font: 400 .9rem 'Inter', sans-serif;
         color: #55B56B;
-        display: none;
-        @media (max-width: 990px) {
-            display: flex;
-            align-items: center;
-        }
+        display: flex;
+        align-items: center;
         img {
             position: relative;
             left: 6px;

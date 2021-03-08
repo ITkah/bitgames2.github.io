@@ -1320,6 +1320,24 @@
                 font: 400 .87rem/20px 'Inter', sans-serif;
             }
         }
+        .hide_text {
+            overflow: hidden;
+            height: 43px;
+        }
+        .hide_text_active {
+            height: auto;
+        }
+        .show_more {
+            cursor: pointer;
+            font: 400 .9rem 'Inter', sans-serif;
+            color: #55B56B;
+            margin-bottom: 15px;
+            display: block;
+            img {
+                position: relative;
+                top: 1.5px;
+            }
+        }
         .generate_custom_casino {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

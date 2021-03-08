@@ -8,8 +8,29 @@
     }
 }
 
+.blog {
+    .hide_text {
+        height: 65px;
+        overflow: hidden;
+    }
+    .hide_text_active {
+        height: auto;
+    }
+    .show_more {
+        margin-bottom: 15px;
+        cursor: pointer;
+        font: 400 .9rem 'Inter', sans-serif;
+        color: #55B56B;
+        margin-bottom: 15px;
+        img {
+            position: relative;
+            top: 1.5px;
+        }
+    }
+}
+
 .blog_text {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #fff;
     font: 400 .95rem/22px 'Inter', sans-serif;
     @media (max-width: 990px) {
