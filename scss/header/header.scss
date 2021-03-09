@@ -292,6 +292,20 @@ header {
                         justify-content: flex-start;
                         opacity: 0;
                         pointer-events: none;
+                        &::after {
+                            content: '';
+                            height: 300%;
+                            width: 100%;
+                            background: transparent;
+                            position: absolute;
+                            right: 0;
+                            top: 100%;
+                            left: 0;
+                            bottom: 0;
+                            @media (max-width: 990px) {
+                                display: none;
+                            }
+                        }
                         @media (max-width: 990px) {
                             position: relative;
                             top: auto;
@@ -357,6 +371,20 @@ header {
                         justify-content: flex-start;
                         opacity: 0;
                         pointer-events: none;
+                        &::after {
+                            content: '';
+                            height: 300%;
+                            width: 100%;
+                            background: transparent;
+                            position: absolute;
+                            right: 0;
+                            top: 100%;
+                            left: 0;
+                            bottom: 0;
+                            @media (max-width: 990px) {
+                                display: none;
+                            }
+                        }
                         @media (max-width: 990px) {
                             position: relative;
                             top: auto;

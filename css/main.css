@@ -518,6 +518,19 @@ header {
                   justify-content: flex-start;
           opacity: 0;
           pointer-events: none; }
+          .header_nav ul li .sub_menu li .sub_menu_2::after {
+            content: '';
+            height: 300%;
+            width: 100%;
+            background: transparent;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            left: 0;
+            bottom: 0; }
+            @media (max-width: 990px) {
+              .header_nav ul li .sub_menu li .sub_menu_2::after {
+                display: none; } }
           @media (max-width: 990px) {
             .header_nav ul li .sub_menu li .sub_menu_2 {
               position: relative;
@@ -592,6 +605,19 @@ header {
                   justify-content: flex-start;
           opacity: 0;
           pointer-events: none; }
+          .header_nav ul li .sub_menu li .sub_menu_3::after {
+            content: '';
+            height: 300%;
+            width: 100%;
+            background: transparent;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            left: 0;
+            bottom: 0; }
+            @media (max-width: 990px) {
+              .header_nav ul li .sub_menu li .sub_menu_3::after {
+                display: none; } }
           @media (max-width: 990px) {
             .header_nav ul li .sub_menu li .sub_menu_3 {
               position: relative;
