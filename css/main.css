@@ -507,7 +507,7 @@ header {
           -webkit-transition: .2s;
           -o-transition: .2s;
           transition: .2s;
-          height: 100%;
+          height: auto;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
           display: flex;
@@ -581,7 +581,7 @@ header {
           -webkit-transition: .2s;
           -o-transition: .2s;
           transition: .2s;
-          height: 100%;
+          height: auto;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
           display: flex;
