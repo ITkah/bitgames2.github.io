@@ -1864,7 +1864,20 @@ header {
     background: #292A2E;
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px; }
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .generate_casino .generate_casino_box .generate_casino_img {
       background: #fff;
       border-radius: 5px 5px 0 0;
@@ -3147,7 +3160,20 @@ header {
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 0; }
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .generate_casino_blog .generate_casino_box .generate_casino_img {
       background: transparent;
       border-radius: 0;
@@ -3745,7 +3771,20 @@ header {
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 0; }
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .blog_post_output .blog_recomended_casino .generate_casino_box .generate_casino_img {
       background: transparent;
       border-radius: 0;
@@ -3863,7 +3902,20 @@ header {
       background: #292A2E;
       -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      border-radius: 5px; }
+      border-radius: 5px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       .game_post_wrap .game_slider_wrap .generate_casino_box .generate_casino_img {
         background: #fff;
         border-radius: 5px 5px 0 0;
@@ -4627,7 +4679,20 @@ header {
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 0; }
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .blog_post_output .blog_recomended_casino .generate_casino_box .generate_casino_img {
       background: transparent;
       border-radius: 0;
@@ -5442,7 +5507,20 @@ header {
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 0; }
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .blog_post_output .blog_recomended_casino .generate_casino_box .generate_casino_img {
       background: transparent;
       border-radius: 0;
@@ -8045,7 +8123,20 @@ s textarea::-webkit-input-placeholder {
     background: #596171;
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px; }
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .page_casino .casino_bonuses .generate_casino_box .copyinfo {
       display: -webkit-box;
       display: -webkit-flex;
@@ -8915,7 +9006,20 @@ s textarea::-webkit-input-placeholder {
     background: #292A2E;
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px; }
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .page_casino .generate_casino .generate_casino_box .generate_casino_img {
       background: #fff;
       border-radius: 5px 5px 0 0;

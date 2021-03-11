@@ -904,6 +904,9 @@
         background: #292A2E;
         box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .generate_casino_img {
             background: #fff;
             border-radius: 5px 5px 0 0;
