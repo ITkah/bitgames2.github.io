@@ -287,3 +287,12 @@ $(".dis").on("click", function() {
     $(".red").removeClass("red_active");
     $(".details_tabs").removeClass("red_active_border");
 });
+
+$(".call_poll").on("click", function() {
+    $(".poll_table").toggleClass("poll_table_act");
+});
+
+$(".call_poll").on("click", function(e) {
+    e.preventDefault();
+    $(".suc_poll").removeClass("poll_table_act");
+});
