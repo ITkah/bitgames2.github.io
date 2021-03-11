@@ -84,6 +84,33 @@ ul {
 select {
   cursor: pointer; }
 
+.hide_text_infos {
+  height: 70px;
+  overflow: hidden; }
+  @media (max-width: 990px) {
+    .hide_text_infos {
+      height: 83px; } }
+
+.hide_text_active {
+  height: auto; }
+
+.show_more_infos {
+  margin: 10px 0;
+  cursor: pointer;
+  font: 400 .9rem 'Inter', sans-serif;
+  color: #55B56B;
+  margin-bottom: 15px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none; }
+  .show_more_infos img {
+    position: relative;
+    top: 1.5px; }
+
+.active_show {
+  opacity: 1;
+  pointer-events: auto; }
+
 .readactor_output p {
   color: #fff !important;
   font: 400 0.95rem/23px "Inter", sans-serif !important; }
@@ -1689,8 +1716,6 @@ header {
     max-width: 100%;
     margin: 0 auto;
     color: #fff;
-    height: 45px;
-    overflow: hidden;
     margin-bottom: 10px;
     font: 400 .95rem/22px 'Inter', sans-serif; }
     @media (max-width: 990px) {
