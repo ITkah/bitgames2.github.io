@@ -1169,7 +1169,7 @@
             }
             .lang_wrap {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 flex-wrap: wrap;
                 @media (max-width: 990px) {
                     display: none;

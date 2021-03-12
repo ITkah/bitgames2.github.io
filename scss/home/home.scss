@@ -801,14 +801,13 @@
         }
     }
     .swiper-container {
-        margin: 0 20px;
         padding: 12px;
         @media (max-width: 990px) {
             margin: 0;
             padding: 0 10px 30px 10px;
         }
         .generate_casino_box {
-            max-width: 140px;
+            max-width: 160px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -830,10 +829,11 @@
             justify-content: center;
             background: #292a2e;
             opacity: 1;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
             border-radius: 3px;
             position: absolute;
-            left: 0;
+            left: 1.5px;
+            z-index: 99;
             top: 42%;
             border-radius: 50%;
             @media (max-width: 990px) {
@@ -849,10 +849,11 @@
             justify-content: center;
             background: #292a2e;
             opacity: 1;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
             border-radius: 3px;
             position: absolute;
-            right: 0;
+            right: 1px;
+            z-index: 99;
             top: 42%;
             border-radius: 50%;
             outline: none;
@@ -1133,8 +1134,11 @@
 }
 
 .jackpots {
-    background: url(../img/home/cata_ab.png) no-repeat center center/cover;
+    background: url(../img/home/jak.svg) no-repeat center center/cover;
+    position: relative;
     .container {
+        position: relative;
+        z-index: 9;
         padding: 30px 0;
         @media (max-width: 990px) {
             padding: 20px 0;
@@ -1269,7 +1273,7 @@
                 align-items: center;
             }
             .facts_title {
-                font: 700 1.2rem 'Inter', sans-serif;
+                font: 400 1.2rem 'Inter', sans-serif;
                 margin-bottom: 5px;
                 color: rgba(255, 255, 255, 0.5);
                 @media (max-width: 990px) {
@@ -1418,6 +1422,18 @@
             grid-template-columns: 1fr;
         }
     }
+    .description_box_info {
+        position: relative;
+        &::after {
+            content: url(../img/home/line.svg);
+            position: absolute;
+            left: 43px;
+            bottom: 30px;
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+    }
     .description_box_wrap {
         display: flex;
         flex-direction: column;
@@ -1518,10 +1534,16 @@
         grid-template-columns: 100px 1fr;
         grid-gap: 20px;
         align-items: start;
+        position: relative;
+        z-index: 9;
         margin: 15px 0;
         @media (max-width: 990px) {
             grid-template-columns: 1fr;
             border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
+        }
+        img {
+            position: relative;
+            z-index: 9;
         }
     }
     .description_item_box:last-child {
