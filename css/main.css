@@ -1926,10 +1926,11 @@ header {
               justify-content: center;
       margin-bottom: 10px; }
       .generate_casino .generate_casino_box .generate_casino_img img {
-        -o-object-fit: contain;
-           object-fit: contain;
+        -o-object-fit: cover;
+           object-fit: cover;
         max-width: 100%;
-        height: auto; }
+        width: 40px !important;
+        height: 40px !important; }
     .generate_casino .generate_casino_box .generate_brend_img {
       display: -webkit-box;
       display: -webkit-flex;

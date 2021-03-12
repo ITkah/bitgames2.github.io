@@ -915,9 +915,10 @@
             justify-content: center;
             margin-bottom: 10px;
             img {
-                object-fit: contain;
+                object-fit: cover;
                 max-width: 100%;
-                height: auto;
+                width: 40px!important;
+                height: 40px!important;
             }
         }
         .generate_brend_img {
