@@ -8021,6 +8021,13 @@ s textarea::-webkit-input-placeholder {
   display: block; }
   .page_casino .detail_block .empty_element {
     display: none; }
+  .page_casino .detail_block .hide_block {
+    display: none; }
+  .page_casino .detail_block .active_more_click {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
 .page_casino .page_casino_hits {
   margin-bottom: 25px; }
