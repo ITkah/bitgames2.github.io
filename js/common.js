@@ -1,5 +1,5 @@
 $('.custom_infos').each(function(index, value) {
-    if ($(".custom_infos").height() > 150) {
+    if ($(this).height() > 150) {
         $(this).addClass("hide_text_infos");
         $(this).siblings(".show_more_infos").addClass("active_show");
     }
