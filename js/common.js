@@ -1,3 +1,12 @@
+$.fn.extend({
+    toggleText: function(a, b) {
+        return this.text(this.text() == b ? a : b);
+    }
+});
+
+var activeText = $(".show_more_text").val();
+var disabledText = $(".show_more_text_active").val();
+
 $('.custom_infos').each(function(index, value) {
     if ($(this).height() > 150) {
         $(this).addClass("hide_text_infos");
@@ -7,7 +16,10 @@ $('.custom_infos').each(function(index, value) {
 
 $(".show_more_infos").on("click", function() {
     $(this).siblings(".hide_text_infos").toggleClass("hide_text_active");
+    $(this).children("span").toggleText(activeText, disabledText);
 });
+
+
 
 $("nav ul li").each(function() {
     this_li = $(this);
@@ -73,6 +85,7 @@ $('.faq_wrap .acc_head').on('click', function() {
 
 $(".show_more").on("click", function() {
     $(this).siblings(".hide_text").toggleClass("hide_text_active");
+    $(this).children("span").toggleText(activeText, disabledText);
 });
 
 $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
@@ -289,11 +302,7 @@ $(".dis").on("click", function() {
 });
 
 
-$.fn.extend({
-    toggleText: function(a, b) {
-        return this.text(this.text() == b ? a : b);
-    }
-});
+
 
 $(".active_more").on("click", function() {
     $(".active_more").toggleClass("hide_block");
