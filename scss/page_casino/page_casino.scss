@@ -212,7 +212,7 @@
             }
             .catagory_star_wrap {
                 display: grid;
-                grid-template-columns: 130px 1fr;
+                grid-template-columns: 160px 1fr;
                 grid-gap: 10px;
                 align-items: center;
                 margin-bottom: 10px;
@@ -709,6 +709,8 @@
                     object-fit: contain;
                     max-width: 100%;
                     height: auto;
+                    min-height: 40px;
+                    min-width: 140px;
                 }
             }
             .generate_brend_img {
@@ -1186,6 +1188,7 @@
                     margin-right: 15px;
                     margin-bottom: 10px;
                     justify-content: center;
+                    min-height: 80px;
                     flex-direction: column;
                     p {
                         color: #fff;
@@ -1443,6 +1446,7 @@
                 img {
                     object-fit: contain;
                     max-width: 100%;
+                    
                     height: auto;
                 }
             }

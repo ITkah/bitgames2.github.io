@@ -917,6 +917,8 @@
             img {
                 object-fit: cover;
                 max-width: 100%;
+                min-height: 40px;
+                min-width: 140px;
             }
         }
         .generate_brend_img {
@@ -1543,6 +1545,7 @@
         img {
             position: relative;
             z-index: 9;
+            min-width: 92px;
         }
     }
     .description_item_box:last-child {
