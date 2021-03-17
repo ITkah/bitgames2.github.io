@@ -1928,9 +1928,7 @@ header {
       .generate_casino .generate_casino_box .generate_casino_img img {
         -o-object-fit: cover;
            object-fit: cover;
-        max-width: 100%;
-        width: 40px !important;
-        height: 40px !important; }
+        max-width: 100%; }
     .generate_casino .generate_casino_box .generate_brend_img {
       display: -webkit-box;
       display: -webkit-flex;

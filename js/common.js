@@ -20,7 +20,6 @@ $(".show_more_infos").on("click", function() {
 });
 
 
-
 $("nav ul li").each(function() {
     this_li = $(this);
     if ($(this_li).find("ul").length > 0) {
