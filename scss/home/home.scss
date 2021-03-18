@@ -909,16 +909,23 @@
         .generate_casino_img {
             background: #fff;
             border-radius: 5px 5px 0 0;
-            padding: 25px 20px;
+            padding: 0;
+            height: 115px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 10px;
+            position: relative;
             img {
                 object-fit: cover;
                 max-width: 100%;
-                min-height: 40px;
-                min-width: 140px;
+                min-height: 100%;
+                min-width: 100%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
             }
         }
         .generate_brend_img {
@@ -941,10 +948,10 @@
             font: 400 1.125rem 'Inter', sans-serif;
         }
         .generate_casino_title {
-            font: 400 .95rem 'Inter', sans-serif;
+            font: 400 .9rem 'Inter', sans-serif;
             margin-bottom: 5px;
             color: #fff;
-            padding: 0 20px;
+            padding: 0 10px;
         }
         .generate_casino_bonus {
             color: #55B56B;
@@ -1319,10 +1326,19 @@
         .latest_xl_news {
             display: flex;
             flex-direction: column;
+            height: 325px;
+            @media (max-width: 990px) {
+                height: auto;
+                min-height: 200px;
+            }
             .xl_news_box {
                 background: linear-gradient(103.32deg, #526EFF 23.43%, #00B7FF 75.98%);
                 border-radius: 10px;
                 padding: 20px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
             }
             .xl_news_img {
                 display: block;

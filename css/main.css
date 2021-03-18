@@ -1911,7 +1911,8 @@ header {
     .generate_casino .generate_casino_box .generate_casino_img {
       background: #fff;
       border-radius: 5px 5px 0 0;
-      padding: 25px 20px;
+      padding: 0;
+      height: 115px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1924,13 +1925,19 @@ header {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      position: relative; }
       .generate_casino .generate_casino_box .generate_casino_img img {
         -o-object-fit: cover;
            object-fit: cover;
         max-width: 100%;
-        min-height: 40px;
-        min-width: 140px; }
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
     .generate_casino .generate_casino_box .generate_brend_img {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1958,10 +1965,10 @@ header {
       color: #fff;
       font: 400 1.125rem 'Inter', sans-serif; }
     .generate_casino .generate_casino_box .generate_casino_title {
-      font: 400 .95rem 'Inter', sans-serif;
+      font: 400 .9rem 'Inter', sans-serif;
       margin-bottom: 5px;
       color: #fff;
-      padding: 0 20px; }
+      padding: 0 10px; }
     .generate_casino .generate_casino_box .generate_casino_bonus {
       color: #55B56B;
       text-align: center;
@@ -2340,12 +2347,31 @@ header {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      height: 325px; }
+      @media (max-width: 990px) {
+        .latest_news .latest_news_wrap .latest_xl_news {
+          height: auto;
+          min-height: 200px; } }
       .latest_news .latest_news_wrap .latest_xl_news .xl_news_box {
         background: -o-linear-gradient(346.68deg, #526EFF 23.43%, #00B7FF 75.98%);
         background: linear-gradient(103.32deg, #526EFF 23.43%, #00B7FF 75.98%);
         border-radius: 10px;
-        padding: 20px; }
+        padding: 20px;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
       .latest_news .latest_news_wrap .latest_xl_news .xl_news_img {
         display: block;
         position: relative;
@@ -3969,7 +3995,8 @@ header {
       .game_post_wrap .game_slider_wrap .generate_casino_box .generate_casino_img {
         background: #fff;
         border-radius: 5px 5px 0 0;
-        padding: 25px 20px;
+        padding: 0;
+        height: 115px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3982,14 +4009,19 @@ header {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        position: relative; }
         .game_post_wrap .game_slider_wrap .generate_casino_box .generate_casino_img img {
-          -o-object-fit: contain;
-             object-fit: contain;
+          -o-object-fit: cover;
+             object-fit: cover;
           max-width: 100%;
-          height: auto;
-          min-height: 40px;
-          min-width: 140px; }
+          min-height: 100%;
+          min-width: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0; }
       .game_post_wrap .game_slider_wrap .generate_casino_box .generate_brend_img {
         display: -webkit-box;
         display: -webkit-flex;
@@ -4017,10 +4049,10 @@ header {
         color: #fff;
         font: 400 1.125rem 'Inter', sans-serif; }
       .game_post_wrap .game_slider_wrap .generate_casino_box .generate_casino_title {
-        font: 400 .95rem 'Inter', sans-serif;
+        font: 400 .9rem 'Inter', sans-serif;
         margin-bottom: 5px;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 10px;
         text-align: center; }
       .game_post_wrap .game_slider_wrap .generate_casino_box .generate_casino_bonus {
         color: #55B56B;
@@ -10700,12 +10732,31 @@ s textarea::-webkit-input-placeholder {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      height: 325px; }
+      @media (max-width: 990px) {
+        .latest_news .latest_news_wrap .latest_xl_news {
+          height: auto;
+          min-height: 200px; } }
       .latest_news .latest_news_wrap .latest_xl_news .xl_news_box {
         background: -o-linear-gradient(346.68deg, #526EFF 23.43%, #00B7FF 75.98%);
         background: linear-gradient(103.32deg, #526EFF 23.43%, #00B7FF 75.98%);
         border-radius: 10px;
-        padding: 20px; }
+        padding: 20px;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
       .latest_news .latest_news_wrap .latest_xl_news .xl_news_img {
         display: block;
         position: relative;
@@ -10847,7 +10898,7 @@ s textarea::-webkit-input-placeholder {
       .siderbar_visited .siderbar_visited_box .siderbar_visited_img p {
         color: #fff;
         max-width: 100px;
-        font: 400 1rem 'Inter', sans-serif; }
+        font: 400 .9rem 'Inter', sans-serif; }
     .siderbar_visited .siderbar_visited_box .visited_btn {
       font: 700 1rem 'Inter', sans-serif;
       padding: 9px 12px;
@@ -10894,7 +10945,7 @@ s textarea::-webkit-input-placeholder {
       border-radius: 5px; }
     .sidebar_guides .sidebar_guides_box p {
       color: #fff;
-      font: 400 1rem/24px 'Inter', sans-serif; }
+      font: 400 .9rem/22px 'Inter', sans-serif; }
   .sidebar_guides .sidebar_guides_box:last-child {
     margin: 0; }
 
