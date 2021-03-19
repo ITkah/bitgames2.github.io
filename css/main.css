@@ -1968,7 +1968,20 @@ header {
       font: 400 .9rem 'Inter', sans-serif;
       margin-bottom: 5px;
       color: #fff;
-      padding: 0 10px; }
+      padding: 0 10px;
+      min-height: 40px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     .generate_casino .generate_casino_box .generate_casino_bonus {
       color: #55B56B;
       text-align: center;
@@ -2595,7 +2608,8 @@ header {
     .description .description_item_box img {
       position: relative;
       z-index: 9;
-      min-width: 92px; }
+      min-height: 98px;
+      min-width: 98px; }
   @media (max-width: 990px) {
     .description .description_item_box:last-child {
       border: none; } }

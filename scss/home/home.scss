@@ -952,6 +952,10 @@
             margin-bottom: 5px;
             color: #fff;
             padding: 0 10px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .generate_casino_bonus {
             color: #55B56B;
@@ -1561,7 +1565,8 @@
         img {
             position: relative;
             z-index: 9;
-            min-width: 92px;
+            min-height: 98px;
+            min-width: 98px;
         }
     }
     .description_item_box:last-child {
