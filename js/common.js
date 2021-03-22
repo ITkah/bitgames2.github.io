@@ -17,6 +17,7 @@ $('.custom_infos').each(function(index, value) {
 $(".show_more_infos").on("click", function() {
     $(this).siblings(".hide_text_infos").toggleClass("hide_text_active");
     $(this).children("span").toggleText(activeText, disabledText);
+    $(this).toggleClass("active_rotate");
 });
 
 
@@ -85,6 +86,7 @@ $('.faq_wrap .acc_head').on('click', function() {
 $(".show_more").on("click", function() {
     $(this).siblings(".hide_text").toggleClass("hide_text_active");
     $(this).children("span").toggleText(activeText, disabledText);
+    $(this).toggleClass("active_rotate");
 });
 
 $('ul.tabs__caption').on('click', 'li:not(.active)', function() {

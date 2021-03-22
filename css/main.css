@@ -115,6 +115,11 @@ select {
   opacity: 1;
   pointer-events: auto; }
 
+.active_rotate img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
 .readactor_output p {
   color: #fff !important;
   word-break: break-all;

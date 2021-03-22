@@ -133,6 +133,12 @@ select {
     pointer-events: auto;
 }
 
+.active_rotate {
+    img {
+        transform: rotate(180deg);
+    }
+}
+
 .readactor_output {
     p {
         color: #fff!important;
