@@ -136,6 +136,7 @@ select {
 .readactor_output {
     p {
         color: #fff!important;
+        word-break: break-all;
         font: 400 .95rem/23px 'Inter', sans-serif!important;
         @media (max-width: 990px) {
             font: 400 .87rem/21px 'Inter', sans-serif!important;
