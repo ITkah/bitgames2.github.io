@@ -3337,6 +3337,12 @@ header {
       .generate_casino_blog .generate_casino_box .generate_casino_btn:hover {
         background: #50b658; }
 
+.generate_casino_blog .generate_casino_title {
+  font: 700 1.5rem 'Inter', sans-serif; }
+  @media (max-width: 990px) {
+    .generate_casino_blog .generate_casino_title {
+      font: 700 1.3rem 'Inter', sans-serif; } }
+
 .blog_bottom {
   margin-bottom: 30px; }
   .blog_bottom .blog_bottom_wrap {
@@ -10954,7 +10960,21 @@ s textarea::-webkit-input-placeholder {
             align-items: center;
     -webkit-transition: .2s;
     -o-transition: .2s;
-    transition: .2s; }
+    transition: .2s;
+    position: relative; }
+    .sidebar_guides .sidebar_guides_box::after {
+      content: '';
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      margin: 0 auto;
+      top: 100%;
+      margin-left: 15px;
+      margin-left: 15px;
+      width: 90%; }
+      @media (max-width: 990px) {
+        .sidebar_guides .sidebar_guides_box::after {
+          width: 92%; } }
     .sidebar_guides .sidebar_guides_box:hover {
       background: #596171; }
     .sidebar_guides .sidebar_guides_box img {
@@ -10968,6 +10988,8 @@ s textarea::-webkit-input-placeholder {
       font: 400 .9rem/22px 'Inter', sans-serif; }
   .sidebar_guides .sidebar_guides_box:last-child {
     margin: 0; }
+    .sidebar_guides .sidebar_guides_box:last-child::after {
+      display: none; }
 
 .sidebar_chek {
   padding: 10px 0;
@@ -10992,7 +11014,21 @@ s textarea::-webkit-input-placeholder {
             align-items: center;
     -webkit-transition: .2s;
     -o-transition: .2s;
-    transition: .2s; }
+    transition: .2s;
+    position: relative; }
+    .sidebar_chek .sidebar_guides_box::after {
+      content: '';
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      margin: 0 auto;
+      top: 100%;
+      margin-left: 15px;
+      margin-left: 15px;
+      width: 90%; }
+      @media (max-width: 990px) {
+        .sidebar_chek .sidebar_guides_box::after {
+          width: 92%; } }
     .sidebar_chek .sidebar_guides_box:hover {
       background: #596171; }
     .sidebar_chek .sidebar_guides_box img {
@@ -11006,6 +11042,8 @@ s textarea::-webkit-input-placeholder {
       font: 400 .87em 'Inter', sans-serif; }
   .sidebar_chek .sidebar_guides_box:last-child {
     margin: 0; }
+    .sidebar_chek .sidebar_guides_box:last-child::after {
+      display: none; }
 
 .sidebar_interview {
   padding: 10px 15px;
@@ -11710,7 +11748,7 @@ footer {
           box-sizing: border-box;
   right: 0;
   bottom: 0;
-  padding: 25px 20px;
+  padding: 15px;
   z-index: 99;
   background: #3B404A;
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -11749,6 +11787,8 @@ footer {
           margin: 0;
           grid-column-end: 3;
           text-align: center;
+          max-width: 80%;
+          margin: 0 auto;
           margin-bottom: 0;
           font: 400 .9rem 'Inter', sans-serif; } }
     .cookies .cookies_wrap .link {
@@ -11795,12 +11835,12 @@ footer {
   .cookies .close_co {
     right: -3px;
     cursor: pointer;
-    top: -12px;
+    top: -6px;
     position: absolute; }
     @media (max-width: 990px) {
       .cookies .close_co {
-        right: -12px;
-        top: -15px; } }
+        right: -8px;
+        top: -8px; } }
 
 .cookies_add {
   -webkit-transform: translateY(0);

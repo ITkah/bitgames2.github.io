@@ -320,3 +320,11 @@ $(".call_poll").on("click", function(e) {
     e.preventDefault();
     $(".suc_poll").removeClass("poll_table_act");
 });
+
+var num = parseInt($.cookie("visit") || 0) + 1;
+$.cookie("visit", num, { expires: 1 });
+if (num == 1) {
+    setTimeout(function() { $(".cookies").addClass("deleted"); }, 1000);
+} else {
+    console.log("Куки сохранены");
+}

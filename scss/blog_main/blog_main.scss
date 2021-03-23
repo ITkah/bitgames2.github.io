@@ -495,6 +495,15 @@
     }
 }
 
+.generate_casino_blog {
+    .generate_casino_title {
+        font: 700 1.5rem 'Inter', sans-serif;
+        @media (max-width: 990px) {
+            font: 700 1.3rem 'Inter', sans-serif;
+        }
+    }
+}
+
 .blog_bottom {
     margin-bottom: 30px;
     .blog_bottom_wrap {
