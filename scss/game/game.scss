@@ -54,7 +54,7 @@
             .generate_casino_img {
                 background: #fff;
                 border-radius: 5px 5px 0 0;
-                padding:0;
+                padding: 0;
                 height: 115px;
                 display: flex;
                 align-items: center;
@@ -343,6 +343,7 @@
                         justify-content: center;
                     }
                     img {
+                        object-fit: cover;
                         margin-right: 10px;
                     }
                     p {

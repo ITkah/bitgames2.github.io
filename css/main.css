@@ -860,7 +860,7 @@ header {
     .header_panel .lang_box .hide_lang {
       position: absolute;
       top: 140%;
-      right: 0;
+      right: -10px;
       opacity: 1;
       padding: 5px 0;
       -webkit-transition: .2s;
@@ -893,7 +893,7 @@ header {
         -webkit-justify-content: flex-start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
-        width: 140px;
+        width: auto;
         padding: 10px;
         -webkit-transition: .2s;
         -o-transition: .2s;
@@ -902,12 +902,6 @@ header {
           background: rgba(255, 255, 255, 0.15); }
           .header_panel .lang_box .hide_lang .hide_lang_item:hover p {
             color: #FFCF24; }
-        .header_panel .lang_box .hide_lang .hide_lang_item img {
-          margin-right: 10px; }
-        .header_panel .lang_box .hide_lang .hide_lang_item p {
-          white-space: nowrap;
-          color: #fff;
-          font: 400 1rem 'Inter', sans-serif; }
 
 .main_section {
   position: relative;
@@ -3476,7 +3470,9 @@ header {
                   -ms-flex-pack: center;
                       justify-content: center; } }
           .blog_post_wrap .blog_post_img .blog_post_info .post_info_box .author img {
-            margin-right: 10px; }
+            margin-right: 10px;
+            -o-object-fit: cover;
+               object-fit: cover; }
           .blog_post_wrap .blog_post_img .blog_post_info .post_info_box .author p {
             color: #fff;
             font: 400 .95rem 'Inter', sans-serif; }
@@ -4389,6 +4385,8 @@ header {
                   -ms-flex-pack: center;
                       justify-content: center; } }
           .game_post_wrap .blog_post_img .blog_post_info .post_info_box .author img {
+            -o-object-fit: cover;
+               object-fit: cover;
             margin-right: 10px; }
           .game_post_wrap .blog_post_img .blog_post_info .post_info_box .author p {
             color: #fff;
@@ -5140,6 +5138,8 @@ header {
                   -ms-flex-pack: center;
                       justify-content: center; } }
           .info_page_wrap .blog_post_img .blog_post_info .post_info_box .author img {
+            -o-object-fit: cover;
+               object-fit: cover;
             margin-right: 10px; }
           .info_page_wrap .blog_post_img .blog_post_info .post_info_box .author p {
             color: #fff;
