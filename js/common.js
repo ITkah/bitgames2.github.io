@@ -33,7 +33,6 @@ function callCook() {
     $(".cookies").addClass("cookies_add");
 }
 
-setTimeout(callCook, 1500);
 
 $(".del_cook").on("click", function(e) {
     e.preventDefault();
@@ -324,7 +323,7 @@ $(".call_poll").on("click", function(e) {
 var num = parseInt($.cookie("visit") || 0) + 1;
 $.cookie("visit", num, { expires: 1 });
 if (num == 1) {
-    setTimeout(function() { $(".cookies").addClass("deleted"); }, 1000);
+    setTimeout(callCook, 1500);
 } else {
     console.log("Куки сохранены");
 }
