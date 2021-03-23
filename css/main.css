@@ -6962,12 +6962,14 @@ s textarea::-webkit-input-placeholder {
             font: 700 1rem 'Inter', sans-serif;
             color: #fff; }
         .catalog_casino .catalog_output_wrap .item_info_wrap .item_wrap_list .item_list {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 15px; }
+          -webkit-columns: 2;
+             -moz-columns: 2;
+                  columns: 2; }
           @media (max-width: 1200px) {
             .catalog_casino .catalog_output_wrap .item_info_wrap .item_wrap_list .item_list {
-              grid-template-columns: 1fr; } }
+              -webkit-columns: 1;
+                 -moz-columns: 1;
+                      columns: 1; } }
           @media (max-width: 576px) {
             .catalog_casino .catalog_output_wrap .item_info_wrap .item_wrap_list .item_list {
               margin-top: 10px;
@@ -6976,7 +6978,8 @@ s textarea::-webkit-input-placeholder {
             color: #fff;
             font: 400 .87rem/20px 'Inter', sans-serif;
             position: relative;
-            padding-left: 18px; }
+            padding-left: 18px;
+            margin-bottom: 5px; }
             @media (max-width: 576px) {
               .catalog_casino .catalog_output_wrap .item_info_wrap .item_wrap_list .item_list li {
                 margin-bottom: 10px; } }
