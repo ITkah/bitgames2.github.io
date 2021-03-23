@@ -1111,6 +1111,9 @@ header {
 .go_catalog {
   margin-bottom: 40px;
   background: url(../img/home/cata_ab.png) no-repeat center center/cover; }
+  @media (max-height: 990px) {
+    .go_catalog {
+      position: relative; } }
   .go_catalog .container {
     padding: 30px 0; }
   .go_catalog .go_catalog_wrap {
@@ -1132,6 +1135,9 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative; }
+    @media (max-height: 990px) {
+      .go_catalog .go_catalog_wrap {
+        position: static; } }
     .go_catalog .go_catalog_wrap .desk_img {
       position: absolute;
       left: 0;
@@ -1141,7 +1147,8 @@ header {
           display: block;
           max-width: 200px;
           max-height: 170px;
-          top: 115px;
+          top: auto;
+          bottom: -35px;
           left: -45px; } }
     .go_catalog .go_catalog_wrap .info_box {
       max-width: 600px;
@@ -1168,7 +1175,7 @@ header {
         @media (max-width: 990px) {
           .go_catalog .go_catalog_wrap .info_box .go_text {
             font: 400 .87rem/21px 'Inter', sans-serif;
-            max-width: 330px;
+            max-width: 280px;
             margin: 0 auto;
             margin-right: 0; } }
       .go_catalog .go_catalog_wrap .info_box .hide_text_active {
@@ -2186,7 +2193,7 @@ header {
     padding: 30px 0; }
     @media (max-width: 990px) {
       .jackpots .container {
-        padding: 20px 0; } }
+        padding: 20px 15px; } }
   .jackpots .jackpots_title {
     margin-bottom: 15px;
     color: #fff;
@@ -2288,6 +2295,9 @@ header {
   background: rgba(0, 0, 0, 0.5); }
   .facts .container {
     padding: 25px 0; }
+    @media (max-width: 990px) {
+      .facts .container {
+        padding: 25px 15px; } }
   .facts .fact_title {
     margin-bottom: 15px;
     color: #fff;
