@@ -1135,7 +1135,7 @@ header {
     .go_catalog .go_catalog_wrap .desk_img {
       position: absolute;
       left: 0;
-      top: -27px; }
+      top: 3px; }
       @media (max-width: 990px) {
         .go_catalog .go_catalog_wrap .desk_img {
           display: block;
