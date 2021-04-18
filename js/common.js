@@ -307,7 +307,7 @@ $(".dis").on("click", function() {
 $(".active_more").on("click", function() {
     $(".active_more").toggleClass("hide_block");
     $(this).toggleClass("active_more_click");
-    $(this).children("p").children("span").toggleText('+', '-');
+    $(this).children("p").children("span").toggleClass("span_acitve");
     $(".detail_elements_list").toggleClass("detail_block");
 });
 
@@ -320,6 +320,89 @@ $(".call_poll").on("click", function(e) {
     $(".suc_poll").removeClass("poll_table_act");
 });
 
+var sidebar = new Swiper('.sidebar_slider', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+});
+
+const pagecasino = new Swiper('.slider_casinos', {
+    loop: false,
+    centerInsufficientSlides: false,
+    centeredSlides: false,
+    slidesPerView: 1,
+    grabCursor: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        },
+        360: {
+            slidesPerView: 3,
+            spaceBetween: 15
+        },
+        576: {
+            slidesPerView: 4,
+            spaceBetween: 15
+        },
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 15
+        },
+        1200: {
+            slidesPerView: 6,
+            spaceBetween: 15
+        }
+    },
+    navigation: {
+        nextEl: '.page_casino_wrapers .button-next',
+        prevEl: '.page_casino_wrapers .button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+    },
+});
+
+const pagination = new Swiper('.slider_nav', {
+    loop: false,
+    centerInsufficientSlides: false,
+    centeredSlides: false,
+    slidesPerView: 1,
+    grabCursor: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 15
+        },
+        360: {
+            slidesPerView: 4,
+            spaceBetween: 15
+        },
+        576: {
+            slidesPerView: 5,
+            spaceBetween: 15
+        },
+        768: {
+            slidesPerView: 6,
+            spaceBetween: 15
+        },
+        1200: {
+            slidesPerView: 8,
+            spaceBetween: 15
+        }
+    },
+    navigation: {
+        nextEl: '.page_nav_wrapers .button-next',
+        prevEl: '.page_nav_wrapers .button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+    },
+});
+
 var num = parseInt($.cookie("visit") || 0) + 1;
 $.cookie("visit", num, { expires: 1 });
 if (num == 1) {
@@ -327,3 +410,4 @@ if (num == 1) {
 } else {
     console.log("Куки сохранены");
 }
+

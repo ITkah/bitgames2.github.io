@@ -343,3 +343,198 @@
         display: block;
     }
 }
+
+.visited_custom {
+    overflow: hidden;
+    .sidebar_title {
+        border-bottom: 1px solid #fff;
+    }
+    .siderbar_visited_box {
+        border-bottom: 1px solid #fff; 
+        position: relative;
+        &::before {
+            content: '';
+            height: 100%;
+            width: 150%;
+            left: -25%;
+            position: absolute;
+            background: #596171;
+            pointer-events: none;
+            opacity: 0;
+            transition: .2s;
+        }
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+    .siderbar_visited_box  {
+        .siderbar_visited_img  {
+            position: relative;
+            z-index: 9;
+            img {
+                border-radius: 5px;
+            }
+            p {
+                max-width: 100%;
+            }
+            .coin {
+                color: #50B14C;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.sidebar_slider {
+    margin-bottom: 15px;
+    .sidebar_slider_title {
+        margin-bottom: 10px;
+        text-align: center;
+        color: #fff;
+        font: 700 1.2rem 'Inter', sans-serif;
+    }
+    img {
+        max-width: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    .swiper-pagination {
+        bottom: 0;
+    }
+    .sidebar_slider {
+        padding-bottom: 20px;
+    }
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        margin: 0 6px;
+        border: 1px solid rgba(174, 174, 174, 1);
+        background: transparent;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #6CDA75;
+    }
+}
+
+.sidebar_information {
+    margin-bottom: 20px;
+    background: #3B404A;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    padding: 8px 0;
+    .sidebar_information_title {
+        margin-bottom: 10px;
+        text-align: center;
+        color: #fff;
+        font: 700 1.2rem 'Inter', sans-serif;
+        
+    }
+    .sidebar_information_wrap {
+        .sidebar_information_box:nth-child(2) {
+            align-items: center;
+        }
+    }
+    .sidebar_box_sm_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        align-items: center;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font: 400 .95rem 'Inter', sans-serif;
+            color: #3589CD;
+            text-decoration: underline;
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        img {
+            max-width: 100%;
+            transition: .3s;
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .flag  {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        span {
+            padding: 7px 15px;
+            background: #596171;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+            border-radius: 5px;
+            position: absolute;
+            bottom: 5%;
+            left:10%;
+            transition: .2s;
+            pointer-events: none;
+            opacity: 0;
+            transform:translate(-50%, -50%);
+        }
+        &:hover {
+            span {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+    .sidebar_information_box {
+        padding: 7px 15px;
+        display: grid;
+        grid-template-columns: 75px 1fr;
+        grid-gap: 10px;
+        .info_title {
+            color: rgba(255, 255, 255, .8);
+            font: 700 .95rem 'Inter', sans-serif;
+            span {
+                @media (max-width: 990px) {
+                    display: none;
+                }
+            }
+        }
+        .sidebar_box_sm {
+            p {
+                font: 400 .95rem 'Inter', sans-serif;
+                color: #fff;
+            }
+            a {
+                font: 400 .95rem 'Inter', sans-serif;
+                color: #3589CD;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .sidebar_information_box:nth-child(2n) {
+        background: #474C56;
+    }
+    .sibebar_btn {
+        background: #50B14C;
+        border-radius: 3px;
+        padding: 10px;
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        color: #fff;
+        font: 700 1rem 'Inter', sans-serif;
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 10px;
+        transition: .2s;
+        margin-bottom: 5px;
+        &:hover {
+            background: #2d9b47;
+        }
+    }
+}
