@@ -403,6 +403,36 @@ const pagination = new Swiper('.slider_nav', {
     },
 });
 
+$(".show_pay").on("click", function(e) {
+    e.preventDefault();
+    $(".payment_box").toggleClass("payment_box_active");
+    $(this).remove();
+});
+
+$(".show_games").on("click", function(e) {
+    e.preventDefault();
+    $(".avalable_box_sm").toggleClass("avalable_box_sm_active");
+    $(this).remove();
+});
+
+$(".show_list").on("click", function(e) {
+    e.preventDefault();
+    $(".about_listing").toggleClass("about_listing_active");
+});
+
+$(".show_games_mob").on("click", function(e) {
+    e.preventDefault();
+    $(".avalable_box_sm").toggleClass("avalable_box_sm_active");
+});
+
+$(".show_lang").on("click", function(e) {
+    e.preventDefault();
+    $(".lang_box").toggleClass("lang_box_active");
+    $(this).remove();
+});
+
+
+
 var num = parseInt($.cookie("visit") || 0) + 1;
 $.cookie("visit", num, { expires: 1 });
 if (num == 1) {

@@ -511,6 +511,7 @@
                             padding-left: 18px;
                             @media (max-width: 990px) {
                                 font: 400 .95rem/22px 'Inter', sans-serif; 
+                                display: none;
                             }
                             &::before {
                                 content: url(../img/catalog_casino/check.svg);
@@ -519,6 +520,26 @@
                                 top: 1px;
                             }
                         }
+                        li:nth-child(1) {
+                            @media (max-width: 990px) {
+                               display: block; 
+                            }
+                        }
+                    }
+                    .about_listing_active{
+                        li {
+                            display: block;
+                        }
+                    }
+                }
+                .show_mob {
+                    display: none;
+                    @media (max-width: 990px) {
+                        display: flex;
+                        margin: 0;
+                        margin-top: 10px;
+                        justify-content: center;
+                        text-align: center;
                     }
                 }
                 .avalable_wrap {
@@ -528,6 +549,9 @@
                     margin-bottom: 10px;
                     padding-bottom: 10px;
                     border-bottom: 1px solid rgba(255, 255, 255, .2);
+                    @media (max-width: 990px) {
+                        flex-direction: column;
+                    }
                     .avalable_box {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
@@ -539,7 +563,7 @@
                             box-sizing: border-box;
                         }
                         .avalable_box_sm {
-                            display: flex;
+                            display: none;
                             align-items: center;
                             img {
                                 margin-right: 10px;
@@ -548,6 +572,20 @@
                                 color: #fff;
                                 font: 400 1rem 'Inter', sans-serif;
                             }
+                        }
+                        .avalable_box_sm:nth-child(-n + 4) {
+                            display: flex;
+                            @media (max-width: 990px) {
+                                display: none;
+                            }
+                        }
+                        .avalable_box_sm:nth-child(-n + 3) {
+                            @media (max-width: 990px) {
+                                display: flex;
+                            }
+                        }
+                        .avalable_box_sm_active {
+                            display: flex;
                         }
                     }
                 }
@@ -568,6 +606,7 @@
                         }
                         img {
                             width: 36px;
+                            display: none;
                             object-fit: cover;
                             border-radius: 5px;
                             border: 2px solid #3B404A;
@@ -576,11 +615,20 @@
                             cursor: pointer;
                             @media (max-width: 990px) {
                                 margin: 3px;
+                                opacity: 1;
                             }
                             &:hover {
                                 opacity: 1;
                                 transform: scale(1.1);
                             }
+                        }
+                        img:nth-child(-n+6) {
+                            display: block;
+                        }
+                    }
+                    .payment_box_active {
+                        img {
+                            display: block;
                         }
                     }
                 }
@@ -1767,7 +1815,7 @@
                     display: none;
                 }
                 .lang_box {
-                    display: flex;
+                    display: none;
                     align-items: center;
                     margin-right: 15px;
                     margin-bottom: 10px;
@@ -1808,6 +1856,15 @@
                         text-align: center;
                         font: 400 .95rem 'Inter', sans-serif;
                     }
+                }
+                .lang_box:nth-child(-n + 10) {
+                    display: flex;
+                }
+                .lang_box:last-child {
+                    display: flex;
+                }
+                .lang_box_active {
+                    display: flex;
                 }
             }
         }
