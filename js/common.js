@@ -431,6 +431,12 @@ $(".show_lang").on("click", function(e) {
     $(this).remove();
 });
 
+$(".show_star_mob").on("click", function(e) {
+    e.preventDefault();
+    $(".catagory_star_wrap").toggleClass("catagory_star_wrap_active");
+    $(this).remove();
+});
+
 
 
 var num = parseInt($.cookie("visit") || 0) + 1;

@@ -314,7 +314,12 @@
         grid-template-columns: 250px 1fr;
         background: linear-gradient(90deg, #3D0202 7.97%, #2F3135 82.41%);
         border-radius: 5px;
+        width: 102%;
+        box-sizing: border-box;
+        position: relative;
+        left: -1%;
         @media (max-width: 990px) {
+            width: auto;
             padding: 0 10px;
             grid-gap: 10px;
             background: linear-gradient(360deg, #3D0202 3%, #2F3135 95%);
@@ -712,6 +717,15 @@
                 padding: 10px;
                 min-height: auto;
             }
+            .show_star_mob {
+                @media (max-width: 990px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 0;
+                    margin-top: 8px;
+                }
+            }
             .all_star_box {
                 display: flex;
                 align-items: center;
@@ -719,10 +733,16 @@
                 margin-bottom: 6px;
                 padding-bottom: 5px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                @media (max-width: 990px){
+                    justify-content: space-around;
+                }
                 .title {
                     color: #FFC850;
                     margin-right: 10px;
                     font: 500 1rem 'Inter', sans-serif;
+                    @media (max-width: 990px) {
+                        font: 700 1rem 'Inter', sans-serif;
+                    }
                 }
                 .star_all {
                     color: #FFC850;
@@ -740,6 +760,9 @@
                 margin-bottom: 6px;
                 padding-bottom: 7px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                @media (max-width: 990px) {
+                    display: none;
+                }
                 @media (max-width: 420px) {
                     grid-template-columns: 1fr;
                     grid-gap: 5px;
@@ -760,6 +783,9 @@
                     }
                 }
             }
+            .catagory_star_wrap_active {
+                display: grid;
+            }
             .catagory_star_wrap:last-child {
                 margin: 0;
                 padding: 0;
@@ -770,8 +796,17 @@
     .page_casino_navigation {
         background: #3B404A;
         border-radius: 5px;
-        margin: 0 10px;
         margin-bottom: 20px;
+        @media (max-width: 990px) {
+            margin: 0 10px;
+            margin-bottom: 20px;
+        }
+        .swiper-container {
+            height: 35px;
+            @media (max-width: 990px) {
+                height: 40px;
+            }
+        }
         .page_nav_wrapers {
             display: flex;
             align-items: center;
@@ -833,6 +868,9 @@
             transition: .2s;
             @media (max-width: 990px) {
                 min-width: 110px;
+            }
+            @media (max-width: 576px) {
+                text-align: left;
             }
             &:hover {
                 background: #596171;
