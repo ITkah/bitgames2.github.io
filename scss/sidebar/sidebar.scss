@@ -350,7 +350,7 @@
         border-bottom: 1px solid #fff;
     }
     .siderbar_visited_box {
-        border-bottom: 1px solid #fff; 
+        border-bottom: 1px solid #fff;
         position: relative;
         &::before {
             content: '';
@@ -369,8 +369,8 @@
             }
         }
     }
-    .siderbar_visited_box  {
-        .siderbar_visited_img  {
+    .siderbar_visited_box {
+        .siderbar_visited_img {
             position: relative;
             z-index: 9;
             img {
@@ -430,7 +430,6 @@
         text-align: center;
         color: #fff;
         font: 700 1.2rem 'Inter', sans-serif;
-        
     }
     .sidebar_information_wrap {
         .sidebar_information_box:nth-child(2) {
@@ -443,7 +442,7 @@
         grid-gap: 5px;
         align-items: center;
         a {
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             font: 400 .95rem 'Inter', sans-serif;
@@ -455,6 +454,15 @@
                 }
             }
         }
+        a:nth-child(-n + 5) {
+            display: flex;
+        }
+        a:last-child {
+            display: flex;
+        }
+        .sidebar_box_sm_active {
+            display: flex;
+        }
         img {
             max-width: 100%;
             transition: .3s;
@@ -463,7 +471,7 @@
             object-fit: cover;
         }
     }
-    .flag  {
+    .flag {
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -475,11 +483,11 @@
             border-radius: 5px;
             position: absolute;
             bottom: 5%;
-            left:10%;
+            left: 10%;
             transition: .2s;
             pointer-events: none;
             opacity: 0;
-            transform:translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
         &:hover {
             span {
@@ -491,6 +499,8 @@
     .sidebar_information_box {
         padding: 7px 15px;
         display: grid;
+        width: 100%;
+        box-sizing: border-box;
         grid-template-columns: 75px 1fr;
         grid-gap: 10px;
         .info_title {

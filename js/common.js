@@ -322,8 +322,8 @@ $(".call_poll").on("click", function(e) {
 
 var sidebar = new Swiper('.sidebar_slider', {
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
     },
 });
 
@@ -369,27 +369,27 @@ const pagination = new Swiper('.slider_nav', {
     loop: false,
     centerInsufficientSlides: false,
     centeredSlides: false,
-    slidesPerView: 1,
     grabCursor: true,
+    spaceBetween: 20,
     breakpoints: {
         320: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 15
         },
         360: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 15
         },
         576: {
-            slidesPerView: 5,
+            slidesPerView: 2,
             spaceBetween: 15
         },
         768: {
-            slidesPerView: 6,
+            slidesPerView: 4,
             spaceBetween: 15
         },
         1200: {
-            slidesPerView: 8,
+            slidesPerView: 5,
             spaceBetween: 15
         }
     },
@@ -437,6 +437,12 @@ $(".show_star_mob").on("click", function(e) {
     $(this).remove();
 });
 
+$(".show_sidebar_link").on("click", function(e) {
+    e.preventDefault();
+    $(this).siblings(".sidebar_box_sm_2 a").toggleClass("sidebar_box_sm_active");
+    $(this).remove();
+});
+
 
 
 var num = parseInt($.cookie("visit") || 0) + 1;
@@ -446,4 +452,3 @@ if (num == 1) {
 } else {
     console.log("Куки сохранены");
 }
-
