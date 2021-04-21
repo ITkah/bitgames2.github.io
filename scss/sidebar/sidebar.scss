@@ -516,6 +516,7 @@
             p {
                 font: 400 .95rem 'Inter', sans-serif;
                 color: #fff;
+                margin-right: 5px;
             }
             a {
                 font: 400 .95rem 'Inter', sans-serif;
@@ -547,4 +548,10 @@
             background: #2d9b47;
         }
     }
+}
+
+.sidebar_box_sm {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
