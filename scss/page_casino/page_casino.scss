@@ -102,7 +102,7 @@
     }
     .page_casino_wrapers {
         display: flex;
-        padding: 0 20px;
+        padding: 0 13px;
         align-items: center;
         justify-content: space-between;
         max-width: 940px;
@@ -227,7 +227,7 @@
             margin-bottom: 20px;
         }
         @media (max-width: 576px) {
-            padding-bottom: 15px;
+            padding-bottom: 10px;
             margin: 0 10px;
             margin-bottom: 20px;
         }
@@ -243,6 +243,8 @@
             @media (max-width: 990px) {
                 font: 400 .87rem/21px 'Inter', sans-serif;
                 padding: 15px;
+                margin: 0 10px;
+                margin-bottom: 10px;
             }
         }
         .custom_list_circle {
@@ -251,6 +253,10 @@
             grid-template-columns: 1fr;
             grid-gap: 5px;
             margin-bottom: 5px;
+            @media (max-width: 990px) {
+                margin: 0 10px;
+                margin-bottom: 10px;
+            }
             li {
                 color: #fff;
                 font: 400 .95rem 'Inter', sans-serif;
@@ -278,6 +284,9 @@
             margin: 0 20px;
             grid-template-columns: 1fr;
             grid-gap: 5px;
+            @media (max-width: 990px) {
+                margin: 0 10px;
+            }
             li {
                 color: #fff;
                 font: 400 .95rem 'Inter', sans-serif;
@@ -457,7 +466,7 @@
                     a,
                     span {
                         color: #fff;
-                        font: 400 .95rem 'Inter', sans-serif;
+                        font: 300 .95rem 'Inter', sans-serif;
                     }
                     a {
                         position: relative;
@@ -469,6 +478,7 @@
                             content: url(../img/bread/bread.svg);
                             position: absolute;
                             right: 0;
+                            top: 1px;
                         }
                     }
                 }
@@ -477,6 +487,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 margin-bottom: 25px;
+                position: relative;
                 @media (max-width: 1280px) {
                     grid-template-columns: 1fr;
                     grid-gap: 15px;
@@ -492,12 +503,115 @@
                 }
                 .show_alls {
                     margin-left: 5px;
-                    color: #3589CD;
+                    color: #B2E8BE;
                     font: 400 1rem 'Inter', sans-serif;
                     text-decoration: underline;
                     cursor: pointer;
                     @media (max-width: 990px) {
                         display: none;
+                    }
+                }
+                 ::-webkit-scrollbar {
+                    width: 4px;
+                    height: 4px;
+                    background-color: #818b9f;
+                }
+                 ::-webkit-scrollbar-thumb {
+                    border-radius: 2px;
+                    background-color: #3b404a;
+                }
+                .hide_payments {
+                    position: absolute;
+                    top: -10px;
+                    right: 80px;
+                    max-height: 215px;
+                    max-width: 250px;
+                    width: 100%;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    padding: 9px 7px;
+                    padding-right: 12px;
+                    display: none;
+                    background: #596171;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    box-sizing: border-box;
+                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+                    border-radius: 5px;
+                    z-index: 9;
+                    .hide_paymetns_wrap {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        grid-gap: 5px;
+                        img {
+                            width: 60px!important;
+                            height: 35px!important;
+                        }
+                        .payments_item {
+                            user-select: none;
+                        }
+                    }
+                }
+                .hide_payments_2 {
+                    position: absolute;
+                    top: -10px;
+                    right: 80px;
+                    max-height: 215px;
+                    max-width: 170px;
+                    width: 100%;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    padding: 0 5px 0 0;
+                    display: none;
+                    background: #596171;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    box-sizing: border-box;
+                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+                    border-radius: 5px;
+                    z-index: 9;
+                    .hide_paymetns_wrap {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        .payments_item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            position: relative;
+                            padding: 5px;
+                            padding-left: 15px;
+                            transition: .2s;
+                            border-radius: 0px 2px 2px 0px;
+                            &:hover {
+                                background: #8E98AC;
+                                p {
+                                    color: #B2E8BE;
+                                }
+                                &::before {
+                                    background: #B2E8BE;
+                                }
+                            }
+                            &::before {
+                                content: '';
+                                height: 5px;
+                                width: 5px;
+                                background: #fff;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 5px;
+                            }
+                        }
+                        img {
+                            width: 30px!important;
+                            height: 30px!important;
+                            margin-right: 10px;
+                        }
+                        p,
+                        a {
+                            color: #fff;
+                            font: 400 .87rem 'Inter', sans-serif;
+                        }
+                        .payments_item {
+                            user-select: none;
+                        }
                     }
                 }
                 .about_casino_list {
@@ -680,12 +794,21 @@
                     @media (max-width: 990px) {
                         flex-direction: column;
                     }
+                    @media (max-width: 576px) {
+                        font: 700 1rem 'Inter', sans-serif;
+                    }
+                    @media (max-width: 320px) {
+                        font: 700 .9rem 'Inter', sans-serif;
+                    }
                     span {
                         opacity: .6;
                         font: 700 1rem 'Inter', sans-serif;
                         margin-left: 5px;
                         @media (max-width: 990px) {
                             display: block;
+                        }
+                        @media (max-width: 320px) {
+                            font: 700 .9rem 'Inter', sans-serif;
                         }
                     }
                 }
@@ -819,7 +942,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border: 1px solid rgba(255, 255, 255, 0.2)
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
         }
         .button-prev {
             outline: none;
@@ -832,6 +957,7 @@
             justify-content: center;
             cursor: pointer;
             opacity: 1;
+            position: relative;
             pointer-events: auto;
             margin-right: 10px;
             background: #596171;
@@ -894,11 +1020,17 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
         @media (max-height: 990px) {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr 1fr;
         }
         li {
             font: 400 .87rem 'Inter', sans-serif;
             color: #fff;
+            @media (max-width: 990px) {
+                font: 400 .8rem 'Inter', sans-serif;
+            }
         }
         .active_more {
             display: flex;
@@ -931,6 +1063,10 @@
                     position: relative;
                     left: .5px;
                     top: -.5px;
+                    @media (max-width: 576px) {
+                        left: .3px;
+                        top: -.3px;
+                    }
                 }
             }
             .span_acitve {
@@ -1676,6 +1812,9 @@
                 color: #fff;
                 font: 400 .95rem 'Inter', sans-serif;
                 padding: 14px 5px;
+                @media (max-width: 990px) {
+                    padding: 10px 5px;
+                }
             }
             td a {
                 color: #B2E8BE;

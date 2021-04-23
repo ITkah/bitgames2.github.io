@@ -405,14 +405,14 @@ const pagination = new Swiper('.slider_nav', {
 
 $(".show_pay").on("click", function(e) {
     e.preventDefault();
-    $(".payment_box").toggleClass("payment_box_active");
-    $(this).remove();
+    $(".hide_payments_2").hide();
+    $(".hide_payments").slideToggle(200);
 });
 
 $(".show_games").on("click", function(e) {
     e.preventDefault();
-    $(".avalable_box_sm").toggleClass("avalable_box_sm_active");
-    $(this).remove();
+    $(".hide_payments").hide();
+    $(".hide_payments_2").slideToggle(200);
 });
 
 $(".show_list").on("click", function(e) {
