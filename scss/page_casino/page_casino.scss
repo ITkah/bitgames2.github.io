@@ -1048,7 +1048,7 @@
                     position: absolute;
                     left: -8px;
                     top: -2px;
-                    color: #55B56B;
+                    color: #B2E8BE;
                 }
             }
         }
@@ -1153,6 +1153,9 @@
                     p {
                         font: 400 .95rem 'Inter', sans-serif;
                         color: #fff;
+                        @media (max-width: 576px) {
+                            color: #B2E8BE;
+                        }
                         @media (max-width: 340px) {
                             font: 400 .9rem 'Inter', sans-serif;
                         }
@@ -1472,6 +1475,7 @@
             margin: 0 30px;
             @media (max-width: 990px) {
                 margin: 0 15px;
+                padding: 15px 25px;
             }
             .app_casino_title {
                 text-align: center;
@@ -1489,7 +1493,7 @@
                 @media (max-width: 990px) {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    grid-gap: 10px;
+                    grid-gap: 20px;
                 }
                 .app_casino_box {
                     display: flex;
@@ -1551,12 +1555,13 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, .05);
             border-radius: 7px;
             @media (max-width: 1200px) {
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 20px 15px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 10px;
             }
             @media (max-width: 990px) {
                 margin: 0 15px;
-                margin-bottom: 15px;
+                padding: 14px;
+                margin-bottom: 0;
             }
             .total_games_box {
                 display: flex;
@@ -1575,12 +1580,20 @@
                 img {
                     object-fit: contain;
                     margin-top: 10px;
+                    @media (max-width: 990px) {
+                        height: auto!important;
+                        width: 38px!important;
+                    }
                 }
                 p {
                     color: #fff;
                     padding: 15px;
                     text-align: center;
                     font: 400 1rem 'Inter', sans-serif;
+                    @media (max-width: 576px) {
+                        padding: 7px;
+                        font: 400 .8rem 'Inter', sans-serif;
+                    }
                 }
             }
             .total_games_box_active {
@@ -1588,10 +1601,21 @@
                 pointer-events: auto;
                 position: relative;
                 &::before {
-                    content: url(../img/page_casino/check.svg);
+                    content: '';
+                    background: url(../img/page_casino/check.svg) no-repeat center center;
                     position: absolute;
+                    background-size: 26px 26px;
+                    height: 26px;
+                    width: 26px;
                     left: -12px;
                     top: -12px;
+                    @media (max-width: 990px) {
+                        background-size: 17px 17px;
+                        height: 17px;
+                        width: 17px;
+                        left: -10px;
+                        top: -10px;
+                    }
                 }
             }
         }
@@ -1719,6 +1743,7 @@
                     content: attr(aria-label);
                     float: left;
                     font-weight: bold;
+                    text-align: left;
                     text-transform: uppercase;
                 }
                 table td:last-child {
@@ -1747,7 +1772,7 @@
                 font: 700 1.5rem 'Inter', sans-serif;
                 @media (max-width: 990px) {
                     text-align: center;
-                    font: 700 1.25rem 'Inter', sans-serif;
+                    font: 700 1.125rem 'Inter', sans-serif;
                 }
             }
             .services_wrap {
@@ -1846,12 +1871,19 @@
                     display: none;
                 }
             }
+            .lang_title {
+                @media (max-width: 990px) {
+                    margin-top: 15px;
+                }
+            }
             .lang_wrap {
                 display: flex;
                 align-items: flex-start;
                 flex-wrap: wrap;
                 @media (max-width: 990px) {
-                    display: none;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-gap: 15px;
                 }
                 .lang_box {
                     display: none;
@@ -1863,6 +1895,10 @@
                     flex-direction: column;
                     position: relative;
                     min-height: 45px;
+                    @media (max-width: 990px) {
+                        margin: 0;
+                        min-height: auto;
+                    }
                     &:hover {
                         span {
                             opacity: 1;
@@ -1892,6 +1928,10 @@
                         max-width: 100%;
                         transition: .2s;
                         object-fit: contain;
+                        @media (max-width: 990px) {
+                            height: 35px!important;
+                            width: 45px!important;
+                        }
                     }
                     a {
                         text-decoration: underline;
@@ -1902,9 +1942,23 @@
                 }
                 .lang_box:nth-child(-n + 10) {
                     display: flex;
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
+                }
+                .lang_box:nth-child(-n + 4) {
+                    @media (max-width: 990px) {
+                        display: flex;
+                    }
                 }
                 .lang_box:last-child {
                     display: flex;
+                    @media (max-width: 990px) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                    }
                 }
                 .lang_box_active {
                     display: flex;
@@ -1977,12 +2031,13 @@
                 color: #fff;
                 margin-left: 5px;
                 @media (max-width: 990px) {
-                    font: 700 1rem 'Inter', sans-serif;
+                    margin-bottom: 8px;
+                    font: 700 1.4rem 'Inter', sans-serif;
                 }
                 span {
                     font: 700 1.125rem 'Inter', sans-serif;
                     @media (max-width: 990px) {
-                        font: 700 .9rem 'Inter', sans-serif;
+                        font: 400 .9rem 'Inter', sans-serif;
                     }
                 }
             }
@@ -2284,6 +2339,9 @@
         box-shadow: 0 4px 30px rgba(80, 177, 76, .4);
         @media (max-width: 990px) {
             max-width: 100%;
+            margin: 0;
+            padding: 15px;
+            font: 700 1.125rem 'Inter', sans-serif;
         }
         &:hover {
             background: #2d9b47;
