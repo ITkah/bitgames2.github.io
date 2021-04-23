@@ -54,8 +54,8 @@
     .simple_casino_text {
         color: #fff;
         padding: 0 30px;
-        margin-bottom: 35px;
-        font: 300 .95rem/22px 'Inter', sans-serif;
+        margin-bottom: 15px;
+        font: 300 .95rem/18px 'Inter', sans-serif;
         @media (max-width: 990px) {
             font: 300 .87rem/20px 'Inter', sans-serif;
             padding: 0 15px;
@@ -220,7 +220,7 @@
         background: #3B404A;
         box-shadow: 0 0 10px rgba(0, 0, 0, .05);
         border-radius: 7px;
-        padding-bottom: 25px;
+        padding-bottom: 15px;
         @media (max-width: 990px) {
             padding-bottom: 15px;
             margin: 0;
@@ -343,8 +343,15 @@
                 align-items: center;
                 justify-content: center;
                 padding: 10px;
+                border-radius: 5px;
                 border: 1px solid #5D4C4E;
                 margin-bottom: 10px;
+                box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
                 @media (max-width: 990px) {
                     height: 100%;
                     width: 100%;
@@ -359,7 +366,9 @@
                     height: auto;
                     margin: 0 auto;
                     display: block;
+                    cursor: pointer;
                     object-fit: contain;
+                    transition: .3s;
                     @media (max-width: 990px) {
                         height: auto!important;
                         width: 100%!important;
@@ -810,12 +819,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            border: 1px solid rgba(255, 255, 255, 0.2)
         }
         .button-prev {
             outline: none;
             appearance: none;
-            width: 93px;
-            max-width: 93px;
+            width: 96px;
+            max-width: 96px;
             height: 38px;
             display: flex;
             align-items: center;
@@ -836,8 +846,8 @@
             opacity: 1;
             pointer-events: auto;
             appearance: none;
-            width: 93px;
-            max-width: 93px;
+            width: 96px;
+            max-width: 96px;
             height: 38px;
             margin-left: 10px;
             display: flex;
@@ -1030,7 +1040,7 @@
             }
             li {
                 color: #fff;
-                font: 400 .95rem 'Inter', sans-serif;
+                font: 400 .9rem 'Inter', sans-serif;
                 position: relative;
                 padding-left: 9px;
                 &::after {
@@ -1115,9 +1125,9 @@
                 }
                 .detail_title {
                     color: #fff;
-                    font: 400 .95rem 'Inter', sans-serif;
+                    font: 500 .95rem 'Inter', sans-serif;
                     @media (max-width: 340px) {
-                        font: 400 .9rem 'Inter', sans-serif;
+                        font: 500 .9rem 'Inter', sans-serif;
                     }
                     svg {
                         height: 15px;
@@ -1134,7 +1144,7 @@
                         font: 400 .9rem 'Inter', sans-serif;
                     }
                     a {
-                        color: #28ADFF;
+                        color: #B2E8BE;
                         &:hover {
                             text-decoration: underline;
                         }
@@ -1465,7 +1475,6 @@
             }
             .app_casino_title {
                 text-align: center;
-                color: #fff;
                 margin-bottom: 10px;
                 color: #fff;
                 font: 700 1.2rem 'Inter', sans-serif;
@@ -1494,21 +1503,22 @@
                     border: 3px solid #8E98AC;
                     box-sizing: border-box;
                     border-radius: 5px;
+                    &:hover {
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                        border-color: #B2E8BE;
+                    }
                     @media (max-width: 1280px) {
                         width: 100%;
                     }
                     @media (max-width: 990px) {
                         margin: 0;
                     }
-                    &:hover {
-                        border-color: #50B14C;
-                    }
                     img {
                         margin-bottom: 10px;
                     }
                     p {
                         text-align: center;
-                        font: 400 1.1rem 'Inter', sans-serif;
+                        font: 400 1.125rem/25px 'Inter', sans-serif;
                         color: #fff;
                     }
                 }
@@ -1644,8 +1654,10 @@
                 padding: 14px 5px;
             }
             td a {
-                color: #44AFFF;
-                text-decoration: underline;
+                color: #B2E8BE;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             table th,
             table td {
@@ -1812,7 +1824,7 @@
                     }
                     a {
                         font: 400 1.125rem 'Inter', sans-serif;
-                        color: #28ADFF;
+                        color: #B2E8BE;
                         text-decoration: underline;
                         @media (max-width: 990px) {
                             font: 400 1rem 'Inter', sans-serif;
@@ -1856,6 +1868,9 @@
                             opacity: 1;
                             pointer-events: auto;
                         }
+                        img {
+                            transform: scale(1.1);
+                        }
                     }
                     span {
                         padding: 7px 15px;
@@ -1863,7 +1878,7 @@
                         box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
                         border-radius: 5px;
                         position: absolute;
-                        top: 8%;
+                        top: -30%;
                         left: 50%;
                         font: 400 .8rem 'Inter', sans-serif;
                         color: #fff;
@@ -1875,11 +1890,12 @@
                     }
                     img {
                         max-width: 100%;
+                        transition: .2s;
                         object-fit: contain;
                     }
                     a {
                         text-decoration: underline;
-                        color: #28ADFF;
+                        color: #B2E8BE;
                         text-align: center;
                         font: 400 .95rem 'Inter', sans-serif;
                     }
