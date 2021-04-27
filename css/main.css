@@ -8678,11 +8678,9 @@ s textarea::-webkit-input-placeholder {
     .page_casino .page_casino_navigation {
       margin: 0 10px;
       margin-bottom: 20px; } }
-  .page_casino .page_casino_navigation .swiper-container {
-    height: 35px; }
-    @media (max-width: 990px) {
-      .page_casino .page_casino_navigation .swiper-container {
-        height: auto; } }
+  @media (max-width: 990px) {
+    .page_casino .page_casino_navigation .swiper-container {
+      height: auto; } }
   .page_casino .page_casino_navigation .page_nav_wrapers {
     display: -webkit-box;
     display: -webkit-flex;
@@ -8706,7 +8704,7 @@ s textarea::-webkit-input-placeholder {
             appearance: none;
     width: 96px;
     max-width: 96px;
-    height: 38px;
+    height: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8737,7 +8735,7 @@ s textarea::-webkit-input-placeholder {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    width: 96px;
+    width: auto;
     max-width: 96px;
     height: 38px;
     margin-left: 10px;

@@ -935,7 +935,6 @@
             margin-bottom: 20px;
         }
         .swiper-container {
-            height: 35px;
             @media (max-width: 990px) {
                 height: auto;
             }
@@ -953,7 +952,7 @@
             appearance: none;
             width: 96px;
             max-width: 96px;
-            height: 38px;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -974,7 +973,7 @@
             opacity: 1;
             pointer-events: auto;
             appearance: none;
-            width: 96px;
+            width: auto;
             max-width: 96px;
             height: 38px;
             margin-left: 10px;
