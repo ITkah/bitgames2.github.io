@@ -415,6 +415,17 @@ $(".show_games").on("click", function(e) {
     $(".hide_payments_2").slideToggle(200);
 });
 
+
+
+$(document).on('click', function(e) {
+    if (!$(e.target).closest(".about_casino_list_2").length) {
+        $('.hide_payments_2').hide();
+        $('.hide_payments').hide();
+    }
+    e.stopPropagation();
+});
+
+
 $(".show_list").on("click", function(e) {
     e.preventDefault();
     $(".about_listing").toggleClass("about_listing_active");

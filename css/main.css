@@ -7649,10 +7649,10 @@ s textarea::-webkit-input-placeholder {
       margin-bottom: 10px; } }
   .page_casino .simple_casino_text a {
     text-decoration: underline;
-    color: #3aa4dd; }
+    color: #B2E8BE; }
   .page_casino .simple_casino_text span {
     text-decoration: none;
-    color: #3aa4dd; }
+    color: #B2E8BE; }
 
 .page_casino .simple_casino_title {
   color: #fff;
@@ -7748,6 +7748,7 @@ s textarea::-webkit-input-placeholder {
     .page_casino .page_casino_wrapers .slider_casinos img {
       max-width: 100%;
       display: block;
+      width: 100%;
       margin: 5px auto;
       -o-object-fit: cover;
          object-fit: cover;
@@ -7842,6 +7843,7 @@ s textarea::-webkit-input-placeholder {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 15px; }
   @media (max-width: 990px) {
     .page_casino .page_casino_boxs {
@@ -8896,15 +8898,13 @@ s textarea::-webkit-input-placeholder {
         font: 700 1.25rem 'Inter', sans-serif; } }
   .page_casino .page_casino_hits .details_tabs {
     background: #3B404A;
-    border: 2px solid #55B56B;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 5px; }
-  .page_casino .page_casino_hits .red_active_border {
-    border: 2px solid #E09B57; }
   .page_casino .page_casino_hits .tabs__caption {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px; }
     .page_casino .page_casino_hits .tabs__caption li {
       background: #596171;
       padding: 15px 30px;
@@ -8935,9 +8935,9 @@ s textarea::-webkit-input-placeholder {
             display: none; } }
     .page_casino .page_casino_hits .tabs__caption .active {
       opacity: 1;
-      background: #55B56B; }
+      background: transparent; }
     .page_casino .page_casino_hits .tabs__caption .red_active {
-      background: #E09B57; }
+      background: transparent; }
   .page_casino .page_casino_hits .tabs_detail_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9830,10 +9830,12 @@ s textarea::-webkit-input-placeholder {
             align-items: flex-start;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    margin-bottom: -15px; }
     @media (max-width: 990px) {
       .page_casino .page_casino_support .custom_support_wrap .lang_wrap {
         display: grid;
+        margin: 0;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 15px; } }
     .page_casino .page_casino_support .custom_support_wrap .lang_wrap .lang_box {
@@ -9921,22 +9923,16 @@ s textarea::-webkit-input-placeholder {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
-      @media (max-width: 990px) {
-        .page_casino .page_casino_support .custom_support_wrap .lang_wrap .lang_box:last-child {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          height: 100%; } }
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100%; }
     .page_casino .page_casino_support .custom_support_wrap .lang_wrap .lang_box_active {
       display: -webkit-box;
       display: -webkit-flex;
@@ -10238,7 +10234,7 @@ s textarea::-webkit-input-placeholder {
       background: #fff;
       border-radius: 5px 5px 0 0;
       padding: 0;
-      height: 115px;
+      height: 70px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -12556,6 +12552,7 @@ s textarea::-webkit-input-placeholder {
       transition: .3s;
       height: auto;
       width: 100%;
+      border-radius: 5px;
       -o-object-fit: cover;
          object-fit: cover; }
   .sidebar_information .flag {

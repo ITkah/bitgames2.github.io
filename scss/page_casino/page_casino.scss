@@ -63,11 +63,11 @@
         }
         a {
             text-decoration: underline;
-            color: #3aa4dd;
+            color: #B2E8BE;
         }
         span {
             text-decoration: none;
-            color: #3aa4dd;
+            color: #B2E8BE;
         }
     }
     .simple_casino_title {
@@ -143,6 +143,7 @@
             img {
                 max-width: 100%;
                 display: block;
+                width: 100%;
                 margin: 5px auto;
                 object-fit: cover;
                 appearance: none;
@@ -220,6 +221,7 @@
         background: #3B404A;
         box-shadow: 0 0 10px rgba(0, 0, 0, .05);
         border-radius: 7px;
+        border: 1px solid rgba(255, 255, 255, .2);
         padding-bottom: 15px;
         @media (max-width: 990px) {
             padding-bottom: 15px;
@@ -1118,16 +1120,17 @@
         }
         .details_tabs {
             background: #3B404A;
-            border: 2px solid #55B56B;
+            // border: 2px solid #55B56B;
             box-sizing: border-box;
             border-radius: 5px;
         }
         .red_active_border {
-            border: 2px solid #E09B57;
+            // border: 2px solid #E09B57;
         }
         .tabs__caption {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            border-radius: 5px;
             li {
                 background: #596171;
                 padding: 15px 30px;
@@ -1154,10 +1157,10 @@
             }
             .active {
                 opacity: 1;
-                background: #55B56B;
+                background: transparent;
             }
             .red_active {
-                background: #E09B57;
+                background: transparent;
             }
         }
         .tabs_detail_wrap {
@@ -2019,8 +2022,10 @@
                 display: flex;
                 align-items: flex-start;
                 flex-wrap: wrap;
+                margin-bottom: -15px;
                 @media (max-width: 990px) {
                     display: grid;
+                    margin: 0;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     grid-gap: 15px;
                 }
@@ -2092,12 +2097,9 @@
                 }
                 .lang_box:last-child {
                     display: flex;
-                    @media (max-width: 990px) {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        height: 100%;
-                    }
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
                 }
                 .lang_box_active {
                     display: flex;
@@ -2343,7 +2345,7 @@
                 background: #fff;
                 border-radius: 5px 5px 0 0;
                 padding: 0;
-                height: 115px;
+                height: 70px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
