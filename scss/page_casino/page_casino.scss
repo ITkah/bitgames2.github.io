@@ -35,7 +35,7 @@
         height: auto;
     }
     .casino_title_box {
-        padding: 15px 30px;
+        padding: 15px 20px;
         background: #596171;
         border-radius: 7px 7px 0 0;
         margin-bottom: 20px;
@@ -53,7 +53,7 @@
     }
     .simple_casino_text {
         color: #fff;
-        padding: 0 30px;
+        padding: 0 20px;
         margin-bottom: 15px;
         font: 300 .95rem/18px 'Inter', sans-serif;
         @media (max-width: 990px) {
@@ -102,7 +102,7 @@
     }
     .page_casino_wrapers {
         display: flex;
-        padding: 0 13px;
+        padding: 0 5px;
         align-items: center;
         justify-content: space-between;
         max-width: 940px;
@@ -238,7 +238,7 @@
             padding: 16px 20px;
             border-left: 4px solid #50B14C;
             color: #fff;
-            margin: 0 30px;
+            margin: 0 20px;
             margin-bottom: 10px;
             word-break: break-word;
             font: 400 .95rem/23px 'Inter', sans-serif;
@@ -251,7 +251,7 @@
         }
         .custom_list_circle {
             display: grid;
-            margin: 0 30px;
+            margin: 0 20px;
             grid-template-columns: 1fr;
             grid-gap: 5px;
             margin-bottom: 5px;
@@ -283,7 +283,7 @@
         .custom_list_num {
             margin-bottom: 10px;
             display: grid;
-            margin: 0 30px;
+            margin: 0 20px;
             grid-template-columns: 1fr;
             grid-gap: 5px;
             @media (max-width: 990px) {
@@ -505,6 +505,7 @@
                 .show_alls {
                     margin-left: 5px;
                     color: #B2E8BE;
+                    white-space: nowrap;
                     font: 400 1rem 'Inter', sans-serif;
                     text-decoration: underline;
                     cursor: pointer;
@@ -840,12 +841,35 @@
                     }
                 }
             }
+            .about_casino_bonus_two {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                @media (max-width: 990px) {
+                    grid-template-columns: 1fr;
+                    grid-gap: 0;
+                }
+                p {
+                    flex-direction: column!important;
+                }
+                .t_s {
+                    color: #959699!important;
+                    font: 400 .65rem/15px 'Inter', sans-serif!important;
+                    @media (max-width: 576px) {
+                        padding: 10px;
+                    }
+                    a {
+                        color: #B2E8BE;
+                    }
+                }
+            }
         }
         .casino_star_wrap {
             padding: 10px 15px;
             background: #3B404A;
             border-radius: 5px;
             min-height: 160px;
+            margin-bottom: 15px;
             @media (max-width: 990px) {
                 padding: 10px;
                 min-height: auto;
@@ -1117,12 +1141,12 @@
         }
         .details_tabs {
             background: #3B404A;
-            // border: 2px solid #55B56B;
+            border: 2px solid #55B56B;
             box-sizing: border-box;
             border-radius: 5px;
         }
         .red_active_border {
-            // border: 2px solid #E09B57;
+            border: 2px solid #E09B57;
         }
         .tabs__caption {
             display: grid;
@@ -1244,7 +1268,7 @@
             }
         }
         .tabs_detail_wrap {
-            padding: 15px 30px;
+            padding: 15px 20px;
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 15px;
@@ -1609,7 +1633,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 0 10px rgba(0, 0, 0, .05);
             border-radius: 7px;
-            margin: 0 30px;
+            margin: 0 20px;
             @media (max-width: 990px) {
                 margin: 0 15px;
                 padding: 15px 25px;
@@ -1764,7 +1788,7 @@
             background: #596171;
             box-shadow: 0 0 10px rgba(0, 0, 0, .05);
             border-radius: 7px;
-            margin: 0 30px;
+            margin: 0 20px;
             margin-bottom: 20px;
             @media (max-width: 990px) {
                 padding: 15px 10px;
@@ -1899,7 +1923,7 @@
     .page_casino_support {
         .custom_support_wrap {
             padding: 20px;
-            margin: 0 30px;
+            margin: 0 20px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             background: #596171;
             box-shadow: 0 0 10px rgba(0, 0, 0, .05);
