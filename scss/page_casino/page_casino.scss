@@ -941,8 +941,6 @@
         }
         .page_nav_wrapers {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
             border-top: 1px solid rgba(255, 255, 255, 0.2);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 3px;
@@ -973,9 +971,9 @@
             opacity: 1;
             pointer-events: auto;
             appearance: none;
-            width: auto;
+            width: 96px;
             max-width: 96px;
-            height: 38px;
+            height: auto;
             margin-left: 10px;
             display: flex;
             align-items: center;
