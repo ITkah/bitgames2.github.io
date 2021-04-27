@@ -7860,7 +7860,7 @@ s textarea::-webkit-input-placeholder {
     padding: 16px 20px;
     border-left: 4px solid #50B14C;
     color: #fff;
-    margin: 0 20px;
+    margin: 0 30px;
     margin-bottom: 10px;
     word-break: break-word;
     font: 400 .95rem/23px 'Inter', sans-serif; }
@@ -7872,7 +7872,7 @@ s textarea::-webkit-input-placeholder {
         margin-bottom: 10px; } }
   .page_casino .page_casino_boxs .custom_list_circle {
     display: grid;
-    margin: 0 20px;
+    margin: 0 30px;
     grid-template-columns: 1fr;
     grid-gap: 5px;
     margin-bottom: 5px; }
@@ -7901,7 +7901,7 @@ s textarea::-webkit-input-placeholder {
   .page_casino .page_casino_boxs .custom_list_num {
     margin-bottom: 10px;
     display: grid;
-    margin: 0 20px;
+    margin: 0 30px;
     grid-template-columns: 1fr;
     grid-gap: 5px; }
     @media (max-width: 990px) {
@@ -9376,6 +9376,7 @@ s textarea::-webkit-input-placeholder {
 .page_casino .app_casino .app_casino_info {
   padding: 15px;
   background: #596171;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
@@ -9555,6 +9556,7 @@ s textarea::-webkit-input-placeholder {
 
 .page_casino .payments_box .payment_table_wrap {
   padding: 15px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: #596171;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -9676,6 +9678,7 @@ s textarea::-webkit-input-placeholder {
 .page_casino .page_casino_support .custom_support_wrap {
   padding: 20px;
   margin: 0 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: #596171;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -9929,6 +9932,7 @@ s textarea::-webkit-input-placeholder {
 
 .page_casino .page_casino_conclus {
   padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: #3B404A;
   border-radius: 7px;
   margin-bottom: 10px; }
