@@ -389,7 +389,7 @@ const pagination = new Swiper('.slider_nav', {
             spaceBetween: 15
         },
         1200: {
-            slidesPerView: 5,
+            slidesPerView: 8,
             spaceBetween: 15
         }
     },
@@ -439,7 +439,7 @@ $(".show_games_mob").on("click", function(e) {
 $(".show_lang").on("click", function(e) {
     e.preventDefault();
     $(".lang_box").toggleClass("lang_box_active");
-    $(this).remove();
+    $(this).toggleClass("show_lang_active");
 });
 
 $(".show_star_mob").on("click", function(e) {

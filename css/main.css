@@ -8217,8 +8217,10 @@ s textarea::-webkit-input-placeholder {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 5px; }
         .page_casino .page_about_casino .page_about_right .about_description_wrap .hide_payments .hide_paymetns_wrap img {
+          -o-object-fit: cover;
+             object-fit: cover;
           width: 60px !important;
-          height: 35px !important; }
+          height: 30px !important; }
         .page_casino .page_about_casino .page_about_right .about_description_wrap .hide_payments .hide_paymetns_wrap .payments_item {
           -webkit-user-select: none;
              -moz-user-select: none;
@@ -10509,6 +10511,18 @@ s textarea::-webkit-input-placeholder {
 
 .disabled_link {
   pointer-events: none; }
+
+.show_lang p:first-child {
+  display: block; }
+
+.show_lang p:last-child {
+  display: none; }
+
+.show_lang_active p:first-child {
+  display: none; }
+
+.show_lang_active p:last-child {
+  display: block; }
 
 .software {
   margin-bottom: 35px; }
