@@ -389,6 +389,10 @@ const pagination = new Swiper('.slider_nav', {
             spaceBetween: 15
         },
         1200: {
+            slidesPerView: 5,
+            spaceBetween: 15
+        },
+        1600: {
             slidesPerView: 8,
             spaceBetween: 15
         }
