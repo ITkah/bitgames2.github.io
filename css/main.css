@@ -8009,7 +8009,7 @@ s textarea::-webkit-input-placeholder {
         width: 100%;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        padding: 15px;
+        padding: 0;
         margin: 0;
         background: #3D0202;
         border: none; } }
@@ -8026,8 +8026,10 @@ s textarea::-webkit-input-placeholder {
       transition: .3s; }
       @media (max-width: 990px) {
         .page_casino .page_about_casino .page_about_left .page_about_img img {
-          height: auto !important;
-          width: 100% !important; } }
+          height: 100% !important;
+          width: 100% !important;
+          -o-object-fit: cover;
+             object-fit: cover; } }
   .page_casino .page_about_casino .page_about_left .mob_name {
     display: none; }
     @media (max-width: 990px) {
