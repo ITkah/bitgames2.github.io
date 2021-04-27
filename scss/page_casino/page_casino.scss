@@ -323,7 +323,6 @@
         grid-gap: 25px;
         padding: 15px 30px;
         grid-template-columns: 250px 1fr;
-        background: linear-gradient(90deg, #3D0202 7.97%, #2F3135 82.41%);
         border-radius: 5px;
         width: 102%;
         box-sizing: border-box;
@@ -333,7 +332,6 @@
             width: auto;
             padding: 0 10px;
             grid-gap: 10px;
-            background: linear-gradient(360deg, #3D0202 3%, #2F3135 95%);
             grid-template-columns: 1fr;
         }
         .about_casino_container {
@@ -2565,4 +2563,23 @@
             }
         }
     }
+}
+
+.show_sidebar_link {
+    span:first-child {
+        display: none;
+    }
+}
+
+.show_sidebar_link_active {
+    span:first-child {
+        display: block;
+    }
+    span:last-child {
+        display: none;
+    }
+}
+
+.disabled_link {
+    pointer-events: none;
 }

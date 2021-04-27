@@ -450,8 +450,8 @@ $(".show_star_mob").on("click", function(e) {
 
 $(".show_sidebar_link").on("click", function(e) {
     e.preventDefault();
+    $(this).toggleClass("show_sidebar_link_active");
     $(this).siblings(".sidebar_box_sm_2 a").toggleClass("sidebar_box_sm_active");
-    $(this).remove();
 });
 
 
