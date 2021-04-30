@@ -372,8 +372,8 @@
                     object-fit: contain;
                     transition: .3s;
                     @media (max-width: 990px) {
-                        height: 100%!important;
-                        width: 100%!important;
+                        height: 90px!important;
+                        width: 90px!important;
                         object-fit: cover;
                     }
                 }
@@ -538,9 +538,9 @@
                         grid-template-columns: 1fr 1fr 1fr 1fr;
                         grid-gap: 5px;
                         img {
-                            object-fit: cover;
-                            width: 60px!important;
-                            height: 30px!important;
+                            object-fit: contain;
+                            width: 55px!important;
+                            height: 20px!important;
                         }
                         .payments_item {
                             user-select: none;
@@ -874,6 +874,7 @@
             .show_star_mob {
                 @media (max-width: 990px) {
                     display: flex;
+                    color: #50B14C;
                     align-items: center;
                     justify-content: center;
                     margin-bottom: 0;

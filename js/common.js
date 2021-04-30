@@ -390,12 +390,12 @@ const pagination = new Swiper('.slider_nav', {
             spaceBetween: 15
         },
         990: {
-            slidesPerView: 8,
+            slidesPerView: 5,
             spaceBetween: 15
         },
         1600: {
-            slidesPerView: 8,
-            spaceBetween: 15
+            slidesPerView: 7,
+            spaceBetween: 60
         }
     },
     navigation: {
