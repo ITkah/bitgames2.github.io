@@ -365,7 +365,8 @@
                 }
                 img {
                     max-width: 100%;
-                    height: auto;
+                    height: 100%!important;
+                    width: 100%!important;
                     margin: 0 auto;
                     display: block;
                     cursor: pointer;
@@ -627,7 +628,8 @@
                         border: none;
                     }
                     ul {
-                        
+                        margin: 0;
+                        padding: 0;
                         display: grid;
                         grid-template-columns: 1fr;
                         grid-gap: 10px;
@@ -2649,5 +2651,16 @@
 .page_casino  {
     .page_about_casino {
         border: none;
+    }
+}
+
+.page_casino_support {
+    .readactor_output {
+        p {
+            margin: 0 20px;
+            @media (max-width: 990px) {
+                margin: 0 15px;
+            }
+        }
     }
 }
