@@ -235,7 +235,7 @@
             margin: 0 10px;
             margin-bottom: 20px;
         }
-        .green_text {
+        blockquote {
             background: rgba(178, 232, 190, .1);
             padding: 16px 20px;
             border-left: 4px solid #50B14C;
@@ -288,7 +288,7 @@
             padding: 0;
             grid-template-columns: 1fr;
             grid-gap: 5px;
-            margin: 0 35px;
+            margin: 0 38px;
             @media (max-width: 990px) {
                 margin: 0 25px;
             }
@@ -457,6 +457,12 @@
                     display: flex;
                     opacity: .5;
                     align-items: center;
+                    li {
+                        padding: 0;
+                        &::before {
+                            display: none;
+                        }
+                    }
                     a,
                     span {
                         color: #fff;

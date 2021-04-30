@@ -7856,7 +7856,7 @@ s textarea::-webkit-input-placeholder {
       padding-bottom: 10px;
       margin: 0 10px;
       margin-bottom: 20px; } }
-  .page_casino .page_casino_boxs .green_text {
+  .page_casino .page_casino_boxs blockquote {
     background: rgba(178, 232, 190, 0.1);
     padding: 16px 20px;
     border-left: 4px solid #50B14C;
@@ -7866,7 +7866,7 @@ s textarea::-webkit-input-placeholder {
     word-break: break-word;
     font: 400 .95rem/23px 'Inter', sans-serif; }
     @media (max-width: 990px) {
-      .page_casino .page_casino_boxs .green_text {
+      .page_casino .page_casino_boxs blockquote {
         font: 400 .87rem/21px 'Inter', sans-serif;
         padding: 15px;
         margin: 0 10px;
@@ -7905,7 +7905,7 @@ s textarea::-webkit-input-placeholder {
     padding: 0;
     grid-template-columns: 1fr;
     grid-gap: 5px;
-    margin: 0 35px; }
+    margin: 0 38px; }
     @media (max-width: 990px) {
       .page_casino .page_casino_boxs ol {
         margin: 0 25px; } }
@@ -8126,6 +8126,10 @@ s textarea::-webkit-input-placeholder {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
+      .page_casino .page_about_casino .page_about_right .page_about_title .breadcrumbs_wrap li {
+        padding: 0; }
+        .page_casino .page_about_casino .page_about_right .page_about_title .breadcrumbs_wrap li::before {
+          display: none; }
       .page_casino .page_about_casino .page_about_right .page_about_title .breadcrumbs_wrap a,
       .page_casino .page_about_casino .page_about_right .page_about_title .breadcrumbs_wrap span {
         color: #fff;
