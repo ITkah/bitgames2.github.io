@@ -371,6 +371,7 @@ const pagination = new Swiper('.slider_nav', {
     centeredSlides: false,
     grabCursor: true,
     spaceBetween: 20,
+    freeMode: true,
     breakpoints: {
         320: {
             slidesPerView: 2,
@@ -388,8 +389,8 @@ const pagination = new Swiper('.slider_nav', {
             slidesPerView: 4,
             spaceBetween: 15
         },
-        1200: {
-            slidesPerView: 5,
+        990: {
+            slidesPerView: 8,
             spaceBetween: 15
         },
         1600: {
