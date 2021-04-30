@@ -10215,7 +10215,8 @@ s textarea::-webkit-input-placeholder {
     font: 400 .9rem 'Inter', sans-serif;
     color: #55B56B;
     margin-bottom: 15px;
-    display: block; }
+    display: block;
+    margin-top: 10px; }
     .page_casino .generate_casino .show_more img {
       position: relative;
       top: 1.5px; }
@@ -10547,10 +10548,10 @@ s textarea::-webkit-input-placeholder {
 .page_casino .page_about_casino {
   border: none; }
 
-.page_casino_support .readactor_output p {
+.page_casino_boxs .readactor_output p {
   margin: 0 20px; }
   @media (max-width: 990px) {
-    .page_casino_support .readactor_output p {
+    .page_casino_boxs .readactor_output p {
       margin: 0 15px; } }
 
 .software {
