@@ -7713,7 +7713,8 @@ s textarea::-webkit-input-placeholder {
   max-width: 940px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  margin-top: 20px; }
   @media (max-width: 1360px) {
     .page_casino .page_casino_wrapers {
       max-width: 860px; } }
@@ -7729,6 +7730,7 @@ s textarea::-webkit-input-placeholder {
   @media (max-width: 990px) {
     .page_casino .page_casino_wrapers {
       padding: 0 20px;
+      margin-top: 15px;
       max-width: 100%; } }
   .page_casino .page_casino_wrapers .swiper-scrollbar-drag {
     background: #596171; }
@@ -7742,7 +7744,7 @@ s textarea::-webkit-input-placeholder {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    padding: 0  10px; }
+    padding: 0 10px; }
     @media (max-width: 990px) {
       .page_casino .page_casino_wrapers .slider_casinos {
         padding-bottom: 10px; } }
@@ -9405,10 +9407,12 @@ s textarea::-webkit-input-placeholder {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
-  margin: 0 20px; }
+  margin: 0 20px;
+  margin-top: 20px; }
   @media (max-width: 990px) {
     .page_casino .app_casino .app_casino_info {
       margin: 0 15px;
+      margin-top: 15px;
       padding: 15px 25px; } }
   .page_casino .app_casino .app_casino_info .app_casino_title {
     text-align: center;
@@ -9487,11 +9491,13 @@ s textarea::-webkit-input-placeholder {
   .page_casino .total_info .total_title_games {
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 20px;
     color: #fff;
     font: 700 1.2rem 'Inter', sans-serif; }
     @media (max-width: 990px) {
       .page_casino .total_info .total_title_games {
-        font: 700 1.1rem 'Inter', sans-serif; } }
+        font: 700 1.1rem 'Inter', sans-serif;
+        margin-top: 15px; } }
   .page_casino .total_info .total_games_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9587,11 +9593,13 @@ s textarea::-webkit-input-placeholder {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
   margin: 0 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
   @media (max-width: 990px) {
     .page_casino .payments_box .payment_table_wrap {
       padding: 15px 10px;
       margin: 0 15px;
+      margin-top: 15px;
       margin-bottom: 20px; } }
   .page_casino .payments_box .payment_table_wrap .table_title {
     margin-bottom: 10px;
@@ -9703,6 +9711,7 @@ s textarea::-webkit-input-placeholder {
 .page_casino .page_casino_support .custom_support_wrap {
   padding: 20px;
   margin: 0 20px;
+  margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #596171;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -9711,7 +9720,8 @@ s textarea::-webkit-input-placeholder {
   @media (max-width: 990px) {
     .page_casino .page_casino_support .custom_support_wrap {
       padding: 15px;
-      margin: 0 15px; } }
+      margin: 0 15px;
+      margin-top: 15px; } }
   .page_casino .page_casino_support .custom_support_wrap .title {
     margin-bottom: 10px;
     color: #fff;
