@@ -7964,7 +7964,7 @@ s textarea::-webkit-input-placeholder {
       grid-gap: 10px;
       padding: 10px 0; } }
   .page_casino .page_about_casino .page_about_left .page_about_img {
-    height: 230px;
+    height: 240px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7977,16 +7977,17 @@ s textarea::-webkit-input-placeholder {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 0;
     border-radius: 5px;
     border: 1px solid #5D4C4E;
     margin-bottom: 10px;
+    overflow: hidden;
     -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5); }
     .page_casino .page_about_casino .page_about_left .page_about_img:hover img {
-      -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-              transform: scale(1.1); }
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
     @media (max-width: 990px) {
       .page_casino .page_about_casino .page_about_left .page_about_img {
         height: 100%;
@@ -8004,8 +8005,8 @@ s textarea::-webkit-input-placeholder {
       margin: 0 auto;
       display: block;
       cursor: pointer;
-      -o-object-fit: contain;
-         object-fit: contain;
+      -o-object-fit: cover;
+         object-fit: cover;
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
