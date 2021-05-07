@@ -8188,7 +8188,7 @@ s textarea::-webkit-input-placeholder {
       top: -10px;
       right: 80px;
       max-height: 215px;
-      max-width: 250px;
+      max-width: 270px;
       width: 100%;
       overflow: hidden;
       overflow-y: scroll;
@@ -8210,8 +8210,8 @@ s textarea::-webkit-input-placeholder {
         .page_casino .page_about_casino .page_about_right .about_description_wrap .hide_payments .hide_paymetns_wrap img {
           -o-object-fit: cover;
              object-fit: cover;
-          width: 42px !important;
-          height: 15px !important; }
+          width: 51px !important;
+          height: 18px !important; }
         .page_casino .page_about_casino .page_about_right .about_description_wrap .hide_payments .hide_paymetns_wrap .payments_item {
           display: -webkit-box;
           display: -webkit-flex;
@@ -8446,7 +8446,7 @@ s textarea::-webkit-input-placeholder {
               justify-content: space-between; }
       .page_casino .page_about_casino .page_about_right .about_description_wrap .payment_wrap .payment_box {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 3px; }
         @media (max-width: 990px) {
           .page_casino .page_about_casino .page_about_right .about_description_wrap .payment_wrap .payment_box {
@@ -8467,7 +8467,8 @@ s textarea::-webkit-input-placeholder {
                     flex-wrap: wrap;
             width: 100%; } }
         .page_casino .page_about_casino .page_about_right .about_description_wrap .payment_wrap .payment_box img {
-          width: 36px;
+          width: 53px;
+          height: 33px;
           display: none;
           -o-object-fit: cover;
              object-fit: cover;
@@ -8487,7 +8488,7 @@ s textarea::-webkit-input-placeholder {
             -webkit-transform: scale(1.1);
                 -ms-transform: scale(1.1);
                     transform: scale(1.1); }
-        .page_casino .page_about_casino .page_about_right .about_description_wrap .payment_wrap .payment_box img:nth-child(-n+6) {
+        .page_casino .page_about_casino .page_about_right .about_description_wrap .payment_wrap .payment_box img:nth-child(-n+4) {
           display: block; }
       .page_casino .page_about_casino .page_about_right .about_description_wrap .payment_wrap .payment_box_active img {
         display: block; }
